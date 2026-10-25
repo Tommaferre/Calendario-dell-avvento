@@ -1,7 +1,7 @@
 {
-  "appName": "Il nostro dicembre",
-  "shortName": "Dicembre",
-  "description": "Un calendario dell'Avvento fatto di piccole sorprese, giorno dopo giorno.",
+  "appName": "L'avvento dei cappelli",
+  "shortName": "CappellAvvento",
+  "description": "Un calendario dell'Avvento per la signorina cappella.",
   "year": 2026,
   "timezone": "Europe/Rome",
   "publicUrl": "https://Tommaferre.github.io/Calendario-dell-avvento/",
