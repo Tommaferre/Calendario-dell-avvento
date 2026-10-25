@@ -4,7 +4,7 @@
   "description": "Un calendario dell'Avvento fatto di piccole sorprese, giorno dopo giorno.",
   "year": 2026,
   "timezone": "Europe/Rome",
-  "publicUrl": "https://UTENTE.github.io/christmas-advent/",
+  "publicUrl": "https://Tommaferre.github.io//Calendario-dell-avvento/",
   "firstDay": 1,
   "lastDay": 25,
   "reminder": { "hour": 9, "minute": 7 },
