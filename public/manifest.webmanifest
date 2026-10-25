@@ -1,0 +1,18 @@
+{
+  "name": "Il nostro dicembre — Calendario dell'Avvento",
+  "short_name": "Avvento",
+  "description": "Un calendario dell'avvento romantico con 25 sorprese, un giorno alla volta.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1f4d3a",
+  "background_color": "#fbf4e6",
+  "lang": "it",
+  "dir": "ltr",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

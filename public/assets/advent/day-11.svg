@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrazione giorno 11">
+  <defs>
+    <linearGradient id="bg11" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf4e6"/>
+      <stop offset="100%" stop-color="#f4e6cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg11)"/>
+  <g><circle cx="248.0853258818388" cy="143.70180520694703" r="10.741220916621387" fill="#7a2335" opacity="0.82"/><circle cx="298.81795056164265" cy="168.44179334584624" r="9.743796919006854" fill="#c9a24b" opacity="0.87"/><circle cx="285.3675226867199" cy="89.50703822541982" r="9.260041698813438" fill="#7a2335" opacity="0.62"/><circle cx="306.2148839980364" cy="168.7008191132918" r="13.084605067502707" fill="#ffffff" opacity="0.70"/><circle cx="177.44262114167213" cy="104.92556694895029" r="9.368933673482388" fill="#ffffff" opacity="0.89"/><circle cx="54.438059851527214" cy="150.38776010274887" r="10.333525956608355" fill="#c9a24b" opacity="0.89"/><circle cx="289.2396730929613" cy="167.99597633071244" r="12.28003723686561" fill="#7a2335" opacity="0.79"/><circle cx="242.3172950744629" cy="70.2505264710635" r="14.222113552037627" fill="#ffffff" opacity="0.59"/></g>
+  <polygon points="203.0321038980037,160 118.0321038980037,230 288.0321038980037,230" fill="#1f4d3a"/><polygon points="203.0321038980037,115 138.0321038980037,185 268.0321038980037,185" fill="#1f4d3a"/><polygon points="203.0321038980037,70 158.0321038980037,140 248.0321038980037,140" fill="#1f4d3a"/><rect x="193.0321038980037" y="230" width="20" height="26" rx="3" fill="#7a2335"/><polygon points="203.0,72.0 207.8,83.4 220.2,84.4 210.7,92.5 213.6,104.6 203.0,98.1 192.5,104.6 195.3,92.5 185.9,84.4 198.3,83.4" fill="#c9a24b"/>
+  <circle cx="60" cy="50" r="22" fill="#c9a24b" opacity="0.18"/>
+  <circle cx="340" cy="260" r="30" fill="#7a2335" opacity="0.12"/>
+  <text x="380" y="284" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#163a2b" opacity="0.55">11</text>
+</svg>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sei offline — Il nostro dicembre</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f4d3a;
+    color: #fbf4e6;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    padding: 24px;
+  }
+  .box { max-width: 420px; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  p { opacity: 0.85; line-height: 1.5; }
+  button {
+    margin-top: 1.5rem;
+    background: #c9a24b;
+    color: #163a2b;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>Sei offline 🎄</h1>
+    <p>Sembra che la connessione non sia disponibile in questo momento. Le caselle che hai già aperto in precedenza restano comunque consultabili; riprova quando torni online per vedere il resto.</p>
+    <button onclick="location.reload()">Riprova</button>
+  </div>
+</body>
+</html>

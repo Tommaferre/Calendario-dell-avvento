@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrazione giorno 14">
+  <defs>
+    <linearGradient id="bg14" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf4e6"/>
+      <stop offset="100%" stop-color="#f4e6cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg14)"/>
+  <g><circle cx="330.87387546896935" cy="75.1855507818982" r="14.417062431108207" fill="#e3c57a" opacity="0.74"/><circle cx="89.66764129698277" cy="101.84669016860425" r="12.664958067703992" fill="#ffffff" opacity="0.62"/><circle cx="330.7340805232525" cy="79.491628697142" r="9.689881183672696" fill="#ffffff" opacity="0.68"/><circle cx="190.44621631503105" cy="139.8486082162708" r="8.289371197111905" fill="#c9a24b" opacity="0.89"/><circle cx="298.1432441622019" cy="115.26918448042125" r="8.43860341841355" fill="#ffffff" opacity="0.66"/><circle cx="133.25750291347504" cy="63.97608888335526" r="12.985341026447713" fill="#c9a24b" opacity="0.59"/><circle cx="120.41468948125839" cy="185.38168552331626" r="15.675503387115896" fill="#c9a24b" opacity="0.85"/><circle cx="102.26990230381489" cy="110.34402993507683" r="8.90276617044583" fill="#e3c57a" opacity="0.55"/></g>
+  <polygon points="204.39328027889132,160 119.39328027889132,230 289.3932802788913,230" fill="#1f4d3a"/><polygon points="204.39328027889132,115 139.39328027889132,185 269.3932802788913,185" fill="#1f4d3a"/><polygon points="204.39328027889132,70 159.39328027889132,140 249.39328027889132,140" fill="#1f4d3a"/><rect x="194.39328027889132" y="230" width="20" height="26" rx="3" fill="#7a2335"/><polygon points="204.4,72.0 209.2,83.4 221.5,84.4 212.1,92.5 215.0,104.6 204.4,98.1 193.8,104.6 196.7,92.5 187.3,84.4 199.6,83.4" fill="#c9a24b"/>
+  <circle cx="60" cy="50" r="22" fill="#c9a24b" opacity="0.18"/>
+  <circle cx="340" cy="260" r="30" fill="#7a2335" opacity="0.12"/>
+  <text x="380" y="284" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#163a2b" opacity="0.55">14</text>
+</svg>

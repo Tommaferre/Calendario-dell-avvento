@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrazione giorno 4">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf4e6"/>
+      <stop offset="100%" stop-color="#f4e6cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg4)"/>
+  <g><circle cx="282.7207123488188" cy="121.87919285614043" r="14.947954627219588" fill="#c9a24b" opacity="0.79"/><circle cx="55.67252926528454" cy="185.39496215526015" r="6.918081179261208" fill="#c9a24b" opacity="0.86"/><circle cx="84.33701001107693" cy="120.55075051262975" r="11.197531078010798" fill="#ffffff" opacity="0.55"/><circle cx="328.6876977980137" cy="141.57720698509365" r="8.43882735259831" fill="#7a2335" opacity="0.67"/><circle cx="133.91241058707237" cy="104.54045485239476" r="12.9678491121158" fill="#c9a24b" opacity="0.86"/><circle cx="61.51030145585537" cy="142.55518330726773" r="7.301729280967265" fill="#7a2335" opacity="0.61"/></g>
+  <polygon points="203.10290314257145,160 118.10290314257145,230 288.10290314257145,230" fill="#1f4d3a"/><polygon points="203.10290314257145,115 138.10290314257145,185 268.10290314257145,185" fill="#1f4d3a"/><polygon points="203.10290314257145,70 158.10290314257145,140 248.10290314257145,140" fill="#1f4d3a"/><rect x="193.10290314257145" y="230" width="20" height="26" rx="3" fill="#7a2335"/><polygon points="203.1,72.0 207.9,83.4 220.2,84.4 210.8,92.5 213.7,104.6 203.1,98.1 192.5,104.6 195.4,92.5 186.0,84.4 198.3,83.4" fill="#c9a24b"/>
+  <circle cx="60" cy="50" r="22" fill="#c9a24b" opacity="0.18"/>
+  <circle cx="340" cy="260" r="30" fill="#7a2335" opacity="0.12"/>
+  <text x="380" y="284" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#163a2b" opacity="0.55">04</text>
+</svg>

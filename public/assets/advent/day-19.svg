@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrazione giorno 19">
+  <defs>
+    <linearGradient id="bg19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf4e6"/>
+      <stop offset="100%" stop-color="#f4e6cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg19)"/>
+  <g><circle cx="283.570591583848" cy="125.76037555467337" r="11.373301059007645" fill="#e3c57a" opacity="0.76"/><circle cx="217.82019913196564" cy="173.8960007065907" r="7.171206175349653" fill="#ffffff" opacity="0.72"/><circle cx="279.0617976337671" cy="140.02027957700193" r="15.446204490959644" fill="#ffffff" opacity="0.77"/><circle cx="107.5400298088789" cy="108.5366300586611" r="13.144779025111347" fill="#e3c57a" opacity="0.86"/><circle cx="358.8149559497833" cy="109.14762932807207" r="11.081565647851676" fill="#7a2335" opacity="0.77"/></g>
+  <polygon points="201.46470272447914,160 116.46470272447914,230 286.46470272447914,230" fill="#1f4d3a"/><polygon points="201.46470272447914,115 136.46470272447914,185 266.46470272447914,185" fill="#1f4d3a"/><polygon points="201.46470272447914,70 156.46470272447914,140 246.46470272447914,140" fill="#1f4d3a"/><rect x="191.46470272447914" y="230" width="20" height="26" rx="3" fill="#7a2335"/><polygon points="201.5,72.0 206.2,83.4 218.6,84.4 209.2,92.5 212.0,104.6 201.5,98.1 190.9,104.6 193.8,92.5 184.3,84.4 196.7,83.4" fill="#c9a24b"/>
+  <circle cx="60" cy="50" r="22" fill="#c9a24b" opacity="0.18"/>
+  <circle cx="340" cy="260" r="30" fill="#7a2335" opacity="0.12"/>
+  <text x="380" y="284" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#163a2b" opacity="0.55">19</text>
+</svg>

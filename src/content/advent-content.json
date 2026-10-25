@@ -1,0 +1,381 @@
+{
+  "version": 1,
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "type": "message",
+      "title": "Si comincia!",
+      "preview": "Apre il nostro calendario, con un pensiero per iniziare.",
+      "body": "Da oggi fino a Natale, ogni giorno c'è una casella con il tuo nome sopra. Niente di complicato: solo piccoli pensieri, qualche gioco e qualche scusa per sorriderti addosso. Oggi ti dico solo questo: sono felice che tu apra proprio questa casella, proprio ora. Buon primo dicembre, amore mio.",
+      "illustration": "assets/advent/day-01.svg"
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "type": "photo",
+      "title": "Una foto per iniziare",
+      "preview": "Un momento che mi fa sorridere ogni volta che lo guardo.",
+      "body": "Questa è una delle foto che custodisco più volentieri. (Sostituiscila con una vostra vera quando vuoi: trovi le istruzioni nella guida di personalizzazione.)",
+      "photoCaption": "Uno dei tanti momenti che vorrei rivivere in loop.",
+      "illustration": "assets/advent/day-02.svg"
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "type": "voucher",
+      "title": "Buono: colazione a letto",
+      "preview": "Un buono vero, da riscuotere quando vuoi tu.",
+      "body": "Oggi niente parole, solo un'offerta concreta: un buono per una colazione a letto, fatta con calma, senza sveglia e senza fretta.",
+      "voucher": {
+        "instructions": "Mostrami questa pagina quando vuoi riscuotere il buono: penso io al resto, tu scegli solo il giorno.",
+        "redeemLabel": "Segna come riscattato",
+        "redeemedLabel": "Riscattato — e rifarei tutto identico"
+      },
+      "illustration": "assets/advent/day-03.svg"
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "type": "message",
+      "title": "Piccola pausa",
+      "preview": "Tre righe per ricordarti una cosa semplice.",
+      "body": "Tra una cosa e l'altra della giornata, volevo solo fermarmi un attimo e dirtelo: mi fai stare bene, anche nei giorni più ordinari. Specialmente in quelli, forse.",
+      "illustration": "assets/advent/day-04.svg"
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "type": "quiz",
+      "title": "Quiz romantico — Round 1",
+      "preview": "Quanto ci conosciamo? Si comincia a giocare.",
+      "body": "Il primo dei nostri quiz: niente di serio, solo scuse per ridere insieme (o per scoprire che su qualcosa non siamo ancora d'accordo).",
+      "quiz": {
+        "intro": "Rispondi con il cuore, non serve studiare.",
+        "questions": [
+          {
+            "question": "Qual è il modo migliore per iniziare una domenica insieme?",
+            "options": [
+              "Colazione con calma",
+              "Sveglia presto per uscire",
+              "Film sul divano",
+              "Dipende dall'umore"
+            ],
+            "correctIndex": 3,
+            "feedbackCorrect": "Esatto: con noi dipende sempre dall'umore, ed è bellissimo così.",
+            "feedbackWrong": "Quasi! La verità è che con noi cambia sempre, ed è proprio questo il bello."
+          },
+          {
+            "question": "Cosa non manca mai in una nostra serata perfetta?",
+            "options": [
+              "Silenzio totale",
+              "Una risata almeno",
+              "Fretta",
+              "Il telefono acceso"
+            ],
+            "correctIndex": 1,
+            "feedbackCorrect": "Vero: una risata la troviamo sempre, anche nelle serate più tranquille.",
+            "feedbackWrong": "In realtà una risata, piccola o grande, non manca praticamente mai."
+          }
+        ],
+        "resultGood": "Ci conosci bene — ma lo sapevo già.",
+        "resultBad": "Va bene anche sbagliare: vuol dire che c'è ancora da scoprire insieme."
+      },
+      "illustration": "assets/advent/day-05.svg"
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "type": "photo",
+      "title": "Un altro scatto",
+      "preview": "Un'altra immagine, un altro pezzetto di noi.",
+      "body": "Non tutte le foto hanno bisogno di una didascalia lunga. Questa mi basta guardarla per sorridere.",
+      "photoCaption": "Ricordo bene quella giornata lì.",
+      "illustration": "assets/advent/day-06.svg"
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "type": "message",
+      "title": "Prima settimana",
+      "preview": "Una settimana di calendario, un pensiero di passaggio.",
+      "body": "Siamo già a sette caselle aperte. Spero che aprirle, una al giorno, ti stia facendo lo stesso effetto che mi fa a me immaginarti mentre le apri: un piccolo sorriso prima di iniziare la giornata.",
+      "illustration": "assets/advent/day-07.svg"
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "type": "voucher",
+      "title": "Buono: scelgo io il film",
+      "preview": "Un buono scomodo per te: stasera comando io sul telecomando.",
+      "body": "Oggi ti offro una serata film, con una condizione sola: la scelta del film è mia. Puoi protestare, ma il buono resta valido comunque.",
+      "voucher": {
+        "instructions": "Dimmi tu quando organizzare la serata: porto io popcorn e scelta del film, promesso.",
+        "redeemLabel": "Segna come riscattato",
+        "redeemedLabel": "Riscattato — e il film l'ho scelto bene, ammettilo"
+      },
+      "illustration": "assets/advent/day-08.svg"
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "type": "game",
+      "title": "Indovinello del giorno",
+      "preview": "Un piccolo enigma, giusto per complicarti la giornata.",
+      "body": "Oggi tocca a te mettere alla prova la testa, non il cuore. Prova a indovinare: se non ci arrivi, va benissimo lo stesso.",
+      "game": {
+        "kind": "riddle",
+        "data": {
+          "intro": "Leggi con calma, poi scrivi la tua risposta.",
+          "riddleText": "Più lo nutri, più cresce in silenzio; non si vede, ma si sente quando manca. Cos'è?",
+          "acceptedAnswers": [
+            "amore",
+            "l'amore",
+            "affetto",
+            "fiducia"
+          ],
+          "hint": "Non è qualcosa che si compra, ma qualcosa che si costruisce ogni giorno.",
+          "solutionReveal": "La risposta era: l'amore (va bene anche 'affetto' o 'fiducia' — qui siamo larghi di manica)."
+        }
+      },
+      "illustration": "assets/advent/day-09.svg"
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "type": "message",
+      "title": "Doppia cifra",
+      "preview": "Dieci giorni di calendario, un pensiero in due righe.",
+      "body": "Dieci caselle aperte vogliono dire che siamo già oltre un terzo di strada. Io continuo a pensarti anche oggi, nel mezzo di una giornata qualsiasi.",
+      "illustration": "assets/advent/day-10.svg"
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "type": "photo",
+      "title": "Scatto numero tre",
+      "preview": "Un'altra immagine dalla nostra raccolta.",
+      "body": "Ogni tanto torno a guardare le nostre foto senza un motivo preciso. Questa è una di quelle che apro più spesso.",
+      "photoCaption": "Uno di quei giorni qualunque diventati speciali.",
+      "illustration": "assets/advent/day-11.svg"
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "type": "voucher",
+      "title": "Buono: passeggiata senza meta",
+      "preview": "Nessun obiettivo, solo una camminata insieme.",
+      "body": "Un buono semplice: una passeggiata senza una meta precisa, solo per stare fuori insieme e parlare di niente in particolare.",
+      "voucher": {
+        "instructions": "Scegli tu il giorno e la zona: l'unica regola è non guardare troppo l'orologio.",
+        "redeemLabel": "Segna come riscattato",
+        "redeemedLabel": "Riscattato — strada fatta, chiacchiere fatte"
+      },
+      "illustration": "assets/advent/day-12.svg"
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "type": "game",
+      "title": "Memory natalizio",
+      "preview": "Trova tutte le coppie tra le decorazioni dell'albero.",
+      "body": "Oggi si gioca sul serio: un memory con le decorazioni natalizie. Conta quanti tentativi ti servono, poi facciamo a gara.",
+      "game": {
+        "kind": "memory",
+        "data": {
+          "intro": "Gira due carte alla volta e trova tutte le coppie.",
+          "symbols": [
+            "🎄",
+            "🎁",
+            "⭐",
+            "🔔",
+            "❄️",
+            "🕯️",
+            "🧦",
+            "🦌"
+          ]
+        }
+      },
+      "illustration": "assets/advent/day-13.svg"
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "type": "quiz",
+      "title": "Quiz romantico — Round 2",
+      "preview": "Seconda manche, stesse regole: niente stress.",
+      "body": "Torna il quiz, con un paio di domande nuove. Vince solo il buonumore.",
+      "quiz": {
+        "intro": "Anche qui, basta rispondere d'istinto.",
+        "questions": [
+          {
+            "question": "Qual è il gesto piccolo che ti fa stare meglio in una giornata storta?",
+            "options": [
+              "Un messaggio a sorpresa",
+              "Un abbraccio senza motivo",
+              "Essere lasciata in pace un attimo",
+              "Tutte e tre, a seconda dei giorni"
+            ],
+            "correctIndex": 3,
+            "feedbackCorrect": "Esatto: dipende dal giorno, e va benissimo così.",
+            "feedbackWrong": "Quasi: la verità è che dipende dal giorno, e questo per me va benissimo."
+          },
+          {
+            "question": "Cosa ci riesce meglio quando lavoriamo in squadra?",
+            "options": [
+              "Organizzare qualcosa all'ultimo",
+              "Litigare sul percorso in auto",
+              "Farci coraggio a vicenda",
+              "Scegliere dove mangiare"
+            ],
+            "correctIndex": 2,
+            "feedbackCorrect": "Vero: nei momenti che contano, ci facciamo coraggio a vicenda.",
+            "feedbackWrong": "In realtà il nostro punto forte è farci coraggio a vicenda quando serve davvero."
+          }
+        ],
+        "resultGood": "Due su due, o quasi: siamo una bella squadra.",
+        "resultBad": "Punteggio basso, affiatamento alto: va bene anche così."
+      },
+      "illustration": "assets/advent/day-14.svg"
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "type": "message",
+      "title": "Metà strada",
+      "preview": "Quindici giorni: siamo arrivati a metà dicembre.",
+      "body": "Metà del calendario è già aperta. Mi piace pensare che ogni casella che apri sia un po' come trovare un bigliettino lasciato apposta per te, in mezzo a una giornata qualsiasi.",
+      "illustration": "assets/advent/day-15.svg"
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "type": "photo",
+      "title": "Scatto numero quattro",
+      "preview": "Un'altra immagine dal nostro archivio di ricordi.",
+      "body": "Non so dirti perché, ma questa foto mi fa sempre un certo effetto. Forse è il momento, forse sei solo tu.",
+      "photoCaption": "Da qui in poi inizio a essere di parte.",
+      "illustration": "assets/advent/day-16.svg"
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "type": "voucher",
+      "title": "Buono: cena a sorpresa",
+      "preview": "Un buono per una cena organizzata da me, dall'inizio alla fine.",
+      "body": "Oggi ti offro una cena a sorpresa: scelgo io il posto o cucino io, tu devi solo presentarti con fame e pazienza.",
+      "voucher": {
+        "instructions": "Dimmi solo quando sei libera: al resto penso io, promesso (quasi) niente ritardi.",
+        "redeemLabel": "Segna come riscattato",
+        "redeemedLabel": "Riscattato — e la sorpresa è andata bene"
+      },
+      "illustration": "assets/advent/day-17.svg"
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "type": "game",
+      "title": "Un altro indovinello",
+      "preview": "Secondo enigma della nostra raccolta.",
+      "body": "Oggi un indovinello un po' più natalizio. Prova a risolverlo prima di arrenderti e sbirciare la soluzione.",
+      "game": {
+        "kind": "riddle",
+        "data": {
+          "intro": "Nessuna fretta, puoi anche riprovare.",
+          "riddleText": "Arrivo una volta sola all'anno, porto luci, freddo e un po' di magia. Cosa sono?",
+          "acceptedAnswers": [
+            "natale",
+            "il natale"
+          ],
+          "hint": "C'entra con l'albero che (forse) avete già montato in casa.",
+          "solutionReveal": "La risposta era: il Natale, ovviamente."
+        }
+      },
+      "illustration": "assets/advent/day-18.svg"
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "type": "letter",
+      "title": "Una lettera, per cambiare",
+      "preview": "Oggi niente messaggio breve: meriti qualche riga in più.",
+      "body": "Oggi volevo scriverti qualcosa di un po' più lungo del solito.\n\nCi sono giorni in cui mi fermo un attimo e penso a quanto sia strano, e bello, aver trovato qualcuno con cui stare bene anche nelle giornate più normali. Non parlo di grandi gesti: parlo del modo in cui mi racconti la tua giornata, di come trovi sempre il modo di farmi ridere anche quando sono stanco, di quanto mi piaccia semplicemente esistere nello stesso spazio in cui ci sei tu.\n\nQuesto calendario è un modo un po' goffo per dirtelo venticinque volte diverse, ma il senso è sempre lo stesso: sono contento che tu ci sia. Buon diciannove dicembre, amore mio.",
+      "illustration": "assets/advent/day-19.svg"
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "type": "message",
+      "title": "Si avvicina",
+      "preview": "Cinque giorni al 25: l'aria si sta scaldando (di affetto).",
+      "body": "Manca sempre meno. Non ti dico cosa trovi nelle ultime caselle, ma ti dico che ci ho messo più cura del solito. Per ora: buona giornata, pensami ogni tanto.",
+      "illustration": "assets/advent/day-20.svg"
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "type": "quiz",
+      "title": "Quiz romantico — Round 3",
+      "preview": "Ultimo quiz prima del gran finale.",
+      "body": "Ultima manche del nostro quiz. Dopo questa, si passa alle cose più serie (ma sempre leggere).",
+      "quiz": {
+        "intro": "Come sempre: d'istinto, senza pensarci troppo.",
+        "questions": [
+          {
+            "question": "Qual è la cosa che vorresti fare di più, insieme, l'anno prossimo?",
+            "options": [
+              "Un viaggio nuovo",
+              "Più serate tranquille",
+              "Imparare qualcosa insieme",
+              "Un po' di tutto questo"
+            ],
+            "correctIndex": 3,
+            "feedbackCorrect": "Esatto: perché no a tutto quanto, con calma?",
+            "feedbackWrong": "In realtà la risposta giusta è: un po' di tutto, senza fretta."
+          }
+        ],
+        "resultGood": "Perfetto: anche io la penso così.",
+        "resultBad": "Nessun problema: ne riparliamo con calma, magari proprio il 25."
+      },
+      "illustration": "assets/advent/day-21.svg"
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "type": "photo",
+      "title": "Penultimo scatto",
+      "preview": "Siamo quasi arrivati: un'altra immagine per il viaggio.",
+      "body": "Mancano pochi giorni. Questa foto la aggiungo come un piccolo assaggio di quello che ci aspetta nelle ultime caselle.",
+      "photoCaption": "Uno dei ricordi a cui tengo di più.",
+      "illustration": "assets/advent/day-22.svg"
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "type": "letter",
+      "title": "Alla vigilia della vigilia",
+      "preview": "Due giorni a Natale: un'altra lettera, un po' più sentita.",
+      "body": "Mancano due giorni, e sento il bisogno di scriverti ancora.\n\nIn questi ventitré giorni ho provato a raccontarti, in modi diversi, le stesse poche cose: che mi fai stare bene, che mi piace la vita che stiamo costruendo insieme, che anche i giorni più normali diventano migliori se ci sei tu in giro.\n\nDomani ti lascio un attimo di tregua (quasi), ma oggi volevo solo dirti grazie: per la pazienza, per le risate, per tutto quello che non sta in una lista. A dopodomani, amore.",
+      "illustration": "assets/advent/day-23.svg"
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "type": "message",
+      "title": "La vigilia dell'attesa",
+      "preview": "Un giorno di pausa, prima della sorpresa più grande.",
+      "body": "Oggi è il giorno dell'attesa: niente di grande, solo un respiro prima di domani. Prenditi un momento per te, goditi i preparativi, e tieni d'occhio l'orologio: domani la casella numero venticinque sarà un po' diversa dalle altre.",
+      "illustration": "assets/advent/day-24.svg"
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "type": "letter",
+      "special": true,
+      "title": "Buon Natale, amore mio",
+      "preview": "La lettera finale, e un regalo simbolico per chiudere il nostro dicembre.",
+      "body": "Siamo arrivati fino a qui, casella dopo casella, e oggi è il giorno in cui questo piccolo calendario si chiude.\n\nVolevo che l'ultima cosa che leggi, in questo nostro dicembre fatto di pensierini e giochi, fosse la più sincera di tutte: grazie di esistere, e grazie di farlo accanto a me. Ogni giorno normale, con te, smette di essere normale: diventa uno dei tanti piccoli giorni che vorrei rivivere.\n\nCome regalo simbolico per chiudere questo calendario, ti lascio una promessa: continuare a costruire, giorno per giorno, altri trecentosessantacinque motivi per aprire una casella come questa, l'anno prossimo. Buon Natale, amore mio. Ti amo.",
+      "illustration": "assets/advent/day-25.svg"
+    }
+  ]
+}

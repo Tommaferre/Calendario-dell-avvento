@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrazione giorno 7">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf4e6"/>
+      <stop offset="100%" stop-color="#f4e6cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg7)"/>
+  <g><circle cx="210.23553982377052" cy="161.8948056921363" r="7.265264027751982" fill="#7a2335" opacity="0.82"/><circle cx="320.66841073334217" cy="136.1311063868925" r="7.318477559834719" fill="#c9a24b" opacity="0.78"/><circle cx="119.48292292654514" cy="67.1869507804513" r="11.892654480412602" fill="#e3c57a" opacity="0.77"/><circle cx="162.66604341566563" cy="89.10516201984137" r="15.058184516616166" fill="#7a2335" opacity="0.60"/><circle cx="307.91500337421894" cy="189.92725656367838" r="9.49861639784649" fill="#ffffff" opacity="0.80"/><circle cx="303.49627166986465" cy="139.68803859781474" r="15.182777781970799" fill="#ffffff" opacity="0.58"/><circle cx="118.04896257817745" cy="195.26703041046858" r="13.941193566657603" fill="#e3c57a" opacity="0.80"/><circle cx="151.9186394661665" cy="175.88524345308542" r="12.673329183831811" fill="#c9a24b" opacity="0.69"/></g>
+  <polygon points="201.876284731552,160 116.876284731552,230 286.876284731552,230" fill="#1f4d3a"/><polygon points="201.876284731552,115 136.876284731552,185 266.876284731552,185" fill="#1f4d3a"/><polygon points="201.876284731552,70 156.876284731552,140 246.876284731552,140" fill="#1f4d3a"/><rect x="191.876284731552" y="230" width="20" height="26" rx="3" fill="#7a2335"/><polygon points="201.9,72.0 206.6,83.4 219.0,84.4 209.6,92.5 212.5,104.6 201.9,98.1 191.3,104.6 194.2,92.5 184.8,84.4 197.1,83.4" fill="#c9a24b"/>
+  <circle cx="60" cy="50" r="22" fill="#c9a24b" opacity="0.18"/>
+  <circle cx="340" cy="260" r="30" fill="#7a2335" opacity="0.12"/>
+  <text x="380" y="284" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#163a2b" opacity="0.55">07</text>
+</svg>
