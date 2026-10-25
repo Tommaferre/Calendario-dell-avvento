@@ -3,9 +3,9 @@
     "title": "Il nostro dicembre",
     "dedication": [
       "Venticinque giorni, venticinque piccole sorprese.",
-      "Questo calendario è il mio modo di starti vicino ogni giorno di dicembre: con un pensiero, un gioco, una promessa da mantenere insieme. Aprine una al giorno, oppure recuperale con calma. Qui nessuno corre."
+      "Questo calendario è una collezione di momenti speciali, per una persona speciale, uno per ogni giorno di dicembre."
     ],
-    "howTo": "Tocca la casella del giorno per aprirla. Quelle col lucchetto si apriranno al loro turno; quelle già aperte restano sempre qui, a tua disposizione.",
+    "howTo": "Tocca la casella del giorno per aprirla. Quelle col lucchetto si apriranno al loro turno; quelle già aperte restano sempre qui, a tua disposizione (alcune potrebbero tornarti utili in futuro XD).",
     "finalTitle": "Il 25 dicembre"
   },
   "days": [
@@ -17,9 +17,8 @@
       "reminder": "Buongiorno! 🎄 Si accende la prima luce del nostro dicembre. La prima casella ti aspetta.",
       "content": { "paragraphs": [
         "Buon primo dicembre! Da oggi, per venticinque giorni, troverai qui una piccola sorpresa: a volte un pensiero, a volte un gioco, a volte una promessa da mantenere insieme.",
-        "Non c’è nessuna fretta. Ogni casella aspetta il suo giorno, e quelle già aperte restano qui, al caldo, per quando vorrai rileggerle.",
-        "Prenditi un momento solo per te, magari con qualcosa di caldo tra le mani. Il nostro dicembre comincia adesso."
-      ] }
+        "Non c’è nessuna fretta. Ogni casella aspetta il suo giorno, e quelle già aperte restano qui, al caldo, per quando vorrai rileggerle."
+        ] }
     },
     {
       "day": 2, "date": "2026-12-02", "type": "message",
@@ -49,12 +48,12 @@
       "title": "Buono: cioccolata calda",
       "preview": "Il primo buono da riscattare.",
       "illustration": "assets/advent/day-04.svg",
-      "reminder": "Buongiorno ☕ Nella casella di oggi c’è qualcosa da riscattare. Ti serve solo un po’ di freddo fuori.",
+      "reminder": "Buongiorno ☕ Nella casella di oggi c’è qualcosa da riscattare! ",
       "content": {
         "title": "Buono per una cioccolata calda",
         "description": "Valido per una cioccolata calda fatta come si deve: densa, con la panna, e un po’ di tempo per berla senza guardare l’orologio.",
         "redeem": "Quando vuoi usarlo, fammelo sapere e poi premi «Segna come usato». Scegli tu il giorno e il posto: a casa o fuori.",
-        "validity": "Valido fino all’Epifania."
+        "validity": "Valido fino alla fine del freddo! 🕒"
       }
     },
     {
@@ -64,7 +63,7 @@
       "illustration": "assets/advent/day-05.svg",
       "reminder": "Buongiorno 🎁 Oggi si gioca: cinque domande sul Natale. Pronta a battere il quiz?",
       "content": {
-        "intro": "Cinque domande sulle tradizioni di Natale. Non c’è un premio in palio… a parte la soddisfazione.",
+        "intro": "Cinque domande sulle tradizioni di Natale. Non c’è un premio in palio… a parte la soddisfazione (scegli tu come considerare questo termine 😉).",
         "questions": [
           { "question": "Sotto quale pianta, secondo la tradizione, ci si scambia un bacio a Natale?",
             "options": ["Vischio", "Agrifoglio", "Edera", "Abete"], "correctIndex": 0,
@@ -88,9 +87,9 @@
             "wrongFeedback": "È la Befana, con la sua scopa e la calza piena." }
         ],
         "results": [
-          { "minScore": 0, "title": "Un inizio dolce", "text": "Il Natale è fatto anche di cose da scoprire. Se vuoi, ci riproviamo: il bello è giocare." },
-          { "minScore": 3, "title": "Quasi esperta", "text": "Ottimo risultato! Ti manca pochissimo per essere un’esperta di tradizioni." },
-          { "minScore": 5, "title": "Campionessa di Natale", "text": "Punteggio pieno! Il titolo è tuo, e il prossimo panettone lo scegli tu." }
+          { "minScore": 0, "title": "Un inizio dolce", "text": "Il Natale è fatto anche di cose da scoprire. Certo che però sei parecchio scarsa..." },
+          { "minScore": 3, "title": "Quasi esperta", "text": "Ottimo risultato! Ti manca pochissimo per essere un’esperta di tradizioni Natalizie." },
+          { "minScore": 5, "title": "Campionessa di Natale", "text": "Punteggio pieno! Il titolo è tuo! 🎉" }
         ]
       }
     },
