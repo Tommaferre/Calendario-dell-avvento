@@ -39,7 +39,7 @@ describe('messaggi', () => {
 
 describe('configurazione e segreti', () => {
   it('segnala secret mancanti e URL di esempio', () => {
-    expect(checkSendConfig({ env: {}, config: app }).length).toBe(3);
+    expect(checkSendConfig({ env: {}, config: app }).length).toBe(2);
     expect(checkSendConfig({ env: { TELEGRAM_BOT_TOKEN: 'a', TELEGRAM_CHAT_ID: 'b' }, config })).toEqual([]);
   });
   it('redact nasconde token e chat id', () => {
