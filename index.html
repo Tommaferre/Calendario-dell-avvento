@@ -2,16 +2,18 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#1f4d3a" />
-    <meta name="description" content="Un calendario dell'avvento romantico con 25 sorprese, un giorno alla volta." />
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="icon" type="image/png" href="icons/icon-192.png" />
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
-    <title>Il nostro dicembre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{{APP_NAME}}</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
+    <meta name="theme-color" content="{{THEME_COLOR}}" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="apple-touch-icon" href="%BASE_URL%icons/apple-touch-icon.png" />
+    <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
   </head>
   <body>
     <div id="root"></div>
+    <noscript>Per aprire il calendario serve JavaScript attivo nel browser.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

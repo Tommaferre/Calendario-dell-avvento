@@ -1,0 +1,47 @@
+# Reminder quotidiano su Telegram, dal 1° al 25 dicembre alle 09:07 (Europe/Rome).
+# Completamente indipendente dal deploy: nessun invio dopo un push.
+# Il trigger "schedule" funziona solo sul branch predefinito del repository.
+name: Advent reminder
+
+on:
+  schedule:
+    - cron: '7 9 1-25 12 *'
+      timezone: 'Europe/Rome'
+  workflow_dispatch:
+    inputs:
+      day:
+        description: 'Giorno da inviare (1–25)'
+        required: true
+        default: '1'
+      dry_run:
+        description: 'Dry-run (non invia nulla). Metti "false" per un invio reale di prova'
+        required: true
+        default: 'true'
+        type: choice
+        options: ['true', 'false']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: advent-reminder
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Invia (o simula) il reminder
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PUBLIC_URL: ${{ vars.PUBLIC_URL }}
+          EVENT_NAME: ${{ github.event_name }}
+          REMINDER_DAY: ${{ inputs.day }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: node --experimental-strip-types --no-warnings scripts/send-advent-reminder.mjs

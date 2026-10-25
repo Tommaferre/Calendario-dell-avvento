@@ -1,23 +1,11 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./styles/global.css";
-import App from "./App.tsx";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './App.tsx';
+import { ConfigError } from './components/ConfigError.tsx';
+import { contentErrors } from './content/index.ts';
+import './styles.css';
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+const root = createRoot(document.getElementById('root')!);
+root.render(
+  <StrictMode>{contentErrors.length > 0 ? <ConfigError errors={contentErrors} /> : <App />}</StrictMode>,
 );
-
-// Registrazione del service worker: usiamo import.meta.env.BASE_URL per
-// costruire correttamente il percorso anche quando l'app è pubblicata
-// sotto https://utente.github.io/nome-repository/.
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    const swUrl = `${import.meta.env.BASE_URL}sw.js`;
-    navigator.serviceWorker.register(swUrl).catch(() => {
-      // Se la registrazione fallisce (es. http non sicuro in sviluppo),
-      // l'app continua a funzionare normalmente, solo senza offline.
-    });
-  });
-}

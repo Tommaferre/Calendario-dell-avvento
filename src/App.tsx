@@ -1,135 +1,127 @@
-import { useEffect, useMemo, useState } from "react";
-import { content, config, assetUrl, getDayContent } from "./content";
-import { isUnlocked, todayInRome } from "./utils/dates";
-import { useAdventState } from "./hooks/useAdventState";
-import CalendarGrid from "./components/CalendarGrid";
-import DayModal from "./components/DayModal";
-import Onboarding from "./components/Onboarding";
-import InstallBanner from "./components/InstallBanner";
-import PreviewBar from "./components/PreviewBar";
-import { useInstallPrompt } from "./hooks/useInstallPrompt";
-import type { DayContent } from "./content/types";
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { Calendar, type DayStatus } from './components/Calendar.tsx';
+import { Header } from './components/Header.tsx';
+import { LockIcon } from './components/Icons.tsx';
+import { Modal } from './components/Modal.tsx';
+import { Onboarding } from './components/Onboarding.tsx';
+import { PreviewPanel } from './components/PreviewPanel.tsx';
+import { SurpriseModal } from './components/SurpriseModal.tsx';
+import { adventContent, appConfig } from './content/index.ts';
+import { currentCalendarDay, getZonedDateParts, isDayUnlocked, opensOnLabel, type DateParts } from './lib/dates.ts';
+import { parseDayParam } from './lib/links.ts';
+import { PREVIEW_AVAILABLE, readPreviewDate } from './lib/preview.ts';
+import { useServiceWorker } from './lib/pwa.ts';
+import { createStore, type AppState } from './lib/storage.ts';
 
-function readDayParam(): number | null {
-  const params = new URLSearchParams(window.location.search);
-  const raw = params.get("day");
-  if (!raw) return null;
-  const n = Number(raw);
-  if (!Number.isInteger(n) || n < 1 || n > 25) return null;
-  return n;
-}
+const { days, meta } = adventContent;
+const { firstDay, lastDay, year, timezone } = appConfig;
 
-export default function App() {
-  const { state, storageWorks, openDay, redeemVoucher, recordQuizResult, recordGameCompletion, setOnboardingSeen } =
-    useAdventState();
-  const { promptInstall, canPromptNatively } = useInstallPrompt();
+export function App() {
+  const store = useMemo(() => createStore(appConfig.storageKey), []);
+  const [state, setState] = useState<AppState>(() => store.load());
+  const [persistOk, setPersistOk] = useState(true);
+  const [now, setNow] = useState(() => new Date());
+  const [preview, setPreview] = useState<DateParts | null>(() => readPreviewDate(window.location.search));
+  const [selected, setSelected] = useState<number | null>(null);
+  const [lockedNotice, setLockedNotice] = useState<number | null>(null);
+  const { updateAvailable, update } = useServiceWorker();
 
-  // La modalità anteprima esiste solo in sviluppo: in produzione questo
-  // intero ramo è eliminato dal bundle (import.meta.env.DEV è una
-  // costante nota a build time, quindi Vite/Rollup rimuove il codice
-  // morto risultante).
-  const [previewDate, setPreviewDate] = useState<string | null>(null);
-  const referenceDate = import.meta.env.DEV && previewDate ? new Date(`${previewDate}T12:00:00`) : undefined;
+  // Data "di oggi" a Roma (o quella simulata, solo in sviluppo).
+  const today = preview ?? getZonedDateParts(now, timezone);
+  const currentDay = currentCalendarDay(today, year, firstDay, lastDay);
 
-  const todayDate = todayInRome(referenceDate);
-  const [activeDay, setActiveDay] = useState<DayContent | null>(null);
-  const [linkWarning, setLinkWarning] = useState<string | null>(null);
+  useEffect(() => { setPersistOk(store.save(state)); }, [state, store]);
 
-  const sortedDays = useMemo(() => [...content.days].sort((a, b) => a.day - b.day), []);
-  const openedCount = state.openedDays.length;
-
-  // Apertura tramite link diretto (?day=N), ad esempio dal reminder
-  // Telegram. Lo sblocco resta comunque regolato dalla data: se la
-  // casella non è ancora disponibile, mostriamo un avviso invece di
-  // aprirla.
   useEffect(() => {
-    const day = readDayParam();
-    if (!day) return;
-    const dayContent = getDayContent(day);
-    if (!dayContent) return;
-    if (isUnlocked(dayContent.date, referenceDate)) {
-      setActiveDay(dayContent);
-    } else {
-      setLinkWarning(
-        `La casella del giorno ${day} non è ancora disponibile: tornerà utile proprio il ${dayContent.date.split("-").reverse().join("/")}.`
-      );
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const refresh = () => setNow(new Date());
+    const id = window.setInterval(refresh, 60_000);
+    document.addEventListener('visibilitychange', refresh);
+    return () => { window.clearInterval(id); document.removeEventListener('visibilitychange', refresh); };
   }, []);
 
-  function handleOpenDay(day: DayContent) {
-    openDay(day.day);
-    setActiveDay(day);
-  }
+  const statusOf = useCallback((day: number): DayStatus => {
+    if (state.opened[String(day)]) return 'opened';
+    return isDayUnlocked(day, today, year) ? 'available' : 'locked';
+  }, [state.opened, today.year, today.month, today.day]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const openDay = useCallback((day: number) => {
+    const status = statusOf(day);
+    if (status === 'locked') { setLockedNotice(day); return; }
+    setState((s) => (s.opened[String(day)] ? s : { ...s, opened: { ...s.opened, [String(day)]: new Date().toISOString() } }));
+    setSelected(day);
+  }, [statusOf]);
+
+  // Link diretto (?day=7): rispetta sempre le regole di sblocco, poi ripulisce l'URL.
+  useEffect(() => {
+    const requested = parseDayParam(window.location.search, firstDay, lastDay);
+    if (requested === null) return;
+    openDay(requested);
+    const url = new URL(window.location.href);
+    url.searchParams.delete('day');
+    window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const openedCount = days.filter((d) => state.opened[String(d.day)]).length;
+  const selectedDay = days.find((d) => d.day === selected) ?? null;
+  const todayAvailable = currentDay !== null && statusOf(currentDay) === 'available';
 
   return (
-    <div className="app-shell">
-      {import.meta.env.DEV && (
-        <PreviewBar previewDate={previewDate} onChange={setPreviewDate} year={config.year} />
-      )}
-
-      {!state.preferences.hasSeenOnboarding && (
-        <Onboarding
-          onDismiss={setOnboardingSeen}
-          onInstallClick={canPromptNatively ? () => promptInstall() : undefined}
-          canInstall={canPromptNatively}
-        />
-      )}
-
-      <header className="hero">
-        <div className="hero__illustration">
-          <img src={assetUrl("assets/advent/hero.svg")} alt="Illustrazione del calendario dell'avvento" />
-        </div>
-        <h1 className="hero__title">{config.appTitle}</h1>
-        <p className="hero__dedication">{config.dedication}</p>
-
-        <div className="progress" aria-label="Avanzamento del calendario">
-          <div className="progress__bar">
-            <div className="progress__fill" style={{ width: `${(openedCount / 25) * 100}%` }} />
-          </div>
-          <p className="progress__label">{openedCount} / 25 caselle aperte</p>
-        </div>
-
-        {!storageWorks && (
-          <p className="progress__label" role="status">
-            Il salvataggio locale non è disponibile su questo browser: l'app funziona comunque,
-            ma il progresso potrebbe non essere ricordato.
-          </p>
+    <>
+      <main className="page">
+        <Header title={meta.title} dedication={meta.dedication} howTo={meta.howTo} opened={openedCount} total={days.length} />
+        {todayAvailable && currentDay !== null && (
+          <button type="button" className="btn btn--gold btn--wide today-cta" onClick={() => openDay(currentDay)}>
+            Apri la sorpresa di oggi
+          </button>
         )}
+        <Calendar days={days} statusOf={statusOf} currentDay={currentDay} onSelect={openDay} lastDay={lastDay} />
+        <Onboarding dismissed={state.prefs.onboardingDismissed} onDismiss={() => setState((s) => ({ ...s, prefs: { ...s.prefs, onboardingDismissed: true } }))} />
+        <footer className="footer">
+          <p>I tuoi progressi restano salvati solo su questo dispositivo.</p>
+          {!persistOk && <p className="footer__warn" role="status">Questo browser non permette di salvare i progressi: se chiudi la pagina le sorprese aperte si azzerano.</p>}
+        </footer>
+      </main>
 
-        {linkWarning && (
-          <p className="progress__label" role="status">
-            {linkWarning}
-          </p>
-        )}
-
-        <InstallBanner />
-      </header>
-
-      <CalendarGrid
-        days={sortedDays}
-        openedDays={state.openedDays}
-        todayDate={todayDate}
-        referenceDate={referenceDate}
-        onOpenDay={handleOpenDay}
-      />
-
-      {activeDay && (
-        <DayModal
-          day={activeDay}
+      {selectedDay && (
+        <SurpriseModal
+          key={selectedDay.day}
+          day={selectedDay}
           state={state}
-          onClose={() => setActiveDay(null)}
-          onRedeemVoucher={redeemVoucher}
-          onQuizComplete={recordQuizResult}
-          onGameComplete={recordGameCompletion}
+          isFinal={selectedDay.day === lastDay}
+          finalTitle={meta.finalTitle}
+          onClose={() => setSelected(null)}
+          onToggleVoucher={(d) => setState((s) => {
+            const redeemed = { ...s.redeemed };
+            if (redeemed[String(d)]) delete redeemed[String(d)]; else redeemed[String(d)] = new Date().toISOString();
+            return { ...s, redeemed };
+          })}
+          onQuiz={(d, score, total) => setState((s) => ({ ...s, quizzes: { ...s.quizzes, [String(d)]: { score, total } } }))}
+          onGame={(d, attempts) => setState((s) => {
+            const prev = s.games[String(d)];
+            const best = prev?.bestAttempts === undefined ? attempts : Math.min(prev.bestAttempts, attempts);
+            return { ...s, games: { ...s.games, [String(d)]: { completed: true, plays: (prev?.plays ?? 0) + 1, bestAttempts: best } } };
+          })}
         />
       )}
 
-      <p className="footer-note">
-        I tuoi progressi sono salvati solo su questo dispositivo e in questo browser (localStorage),
-        non vengono inviati altrove. Il calendario funziona anche offline dopo il primo
-        caricamento. Fuso orario di riferimento: {config.timezone}.
-      </p>
-    </div>
+      {lockedNotice !== null && (
+        <Modal labelledBy="locked-title" onClose={() => setLockedNotice(null)} className="sheet--small">
+          <div className="sheet__body locked">
+            <span className="locked__icon"><LockIcon /></span>
+            <h2 id="locked-title" className="sheet__title">Non ancora!</h2>
+            <p>Questa sorpresa si apre <strong>{opensOnLabel(lockedNotice)}</strong>. Nel frattempo puoi aprire quelle dei giorni passati.</p>
+            <button type="button" className="btn btn--gold btn--wide" onClick={() => setLockedNotice(null)}>Va bene</button>
+          </div>
+        </Modal>
+      )}
+
+      {updateAvailable && (
+        <div className="toast" role="status">
+          <span>È disponibile una versione aggiornata.</span>
+          <button type="button" className="btn btn--gold" onClick={update}>Aggiorna</button>
+        </div>
+      )}
+      {PREVIEW_AVAILABLE && <PreviewPanel value={preview} onChange={setPreview} year={year} />}
+    </>
   );
 }

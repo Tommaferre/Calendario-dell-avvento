@@ -1,36 +1,37 @@
 {
   "name": "christmas-advent",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Calendario dell'Avvento romantico (PWA) con reminder Telegram",
+  "engines": { "node": ">=22.14" },
   "scripts": {
     "dev": "vite",
-    "content:build": "node scripts/build-content.mjs",
-    "assets:build": "node scripts/build-assets.mjs",
-    "sw:build": "node scripts/build-sw.mjs",
-    "prebuild": "node scripts/build-sw.mjs",
-    "build": "tsc -b && vite build",
-    "test": "vitest",
-    "lint": "oxlint",
+    "build": "vite build",
     "preview": "vite preview",
-    "reminder:dry-run": "node scripts/send-advent-reminder.mjs --dry-run",
-    "reminder:test": "node scripts/send-advent-reminder.mjs"
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run validate && npm test",
+    "validate": "node --experimental-strip-types --no-warnings scripts/validate-content.mjs",
+    "assets": "node scripts/generate-assets.mjs",
+    "set-year": "node scripts/set-year.mjs",
+    "reminder:dry": "node --experimental-strip-types --no-warnings scripts/send-advent-reminder.mjs"
   },
   "dependencies": {
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^7.0.1",
-    "@testing-library/react": "^16.3.3",
-    "@types/node": "^24.19.2",
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "jsdom": "^30.1.3",
-    "oxlint": "^1.88.0",
-    "typescript": "~6.0.3",
-    "vite": "^8.3.4",
-    "vitest": "^5.0.5"
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
   }
 }

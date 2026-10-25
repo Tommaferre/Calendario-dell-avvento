@@ -1,0 +1,5 @@
+Cartella per le vostre fotografie.
+I tre file .svg qui dentro sono illustrazioni di esempio, già collegate ai giorni 3, 11 e 19.
+Per usare una foto vera: copia qui il file (es. nostra-foto.jpg) e cambia "image" nel giorno
+corrispondente di src/content/advent-content.json. Dettagli in GUIDA_PERSONALIZZAZIONE.md.
+ATTENZIONE: il repository è pubblico, quindi ogni foto è raggiungibile da chiunque conosca l'URL.

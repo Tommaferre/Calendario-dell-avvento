@@ -1,31 +1,34 @@
-interface Props {
-  onDismiss: () => void;
-  onInstallClick?: () => void;
-  canInstall: boolean;
-}
+import { useState } from 'react';
+import { useInstallPrompt } from '../lib/pwa.ts';
 
-export default function Onboarding({ onDismiss, onInstallClick, canInstall }: Props) {
+interface Props { dismissed: boolean; onDismiss: () => void }
+
+/** Suggerimento facoltativo per installare l'app. Non blocca mai l'accesso al calendario. */
+export function Onboarding({ dismissed, onDismiss }: Props) {
+  const { canPrompt, installed, install } = useInstallPrompt();
+  const [showHelp, setShowHelp] = useState(false);
+  if (dismissed || installed) return null;
   return (
-    <div className="onboarding-overlay" role="dialog" aria-modal="true" aria-labelledby="onboarding-title">
-      <div className="onboarding-card">
-        <h2 id="onboarding-title">Benvenuta nel nostro calendario 🎄</h2>
-        <p>
-          Ogni giorno, dal 1° al 25 dicembre, si sblocca una nuova casella. Toccala per aprire
-          la sorpresa del giorno: a volte è un pensiero, a volte un gioco, a volte qualcosa da
-          riscuotere insieme.
-        </p>
-        <p>Le caselle già aperte restano sempre consultabili, in qualsiasi momento.</p>
-        <div style={{ display: "flex", gap: "0.6rem", justifyContent: "center", flexWrap: "wrap", marginTop: "1.2rem" }}>
-          <button type="button" className="btn btn--primary" onClick={onDismiss}>
-            Ho capito, si comincia
+    <section className="onboarding" aria-labelledby="onb-title">
+      <h2 id="onb-title">Tienilo sempre con te</h2>
+      <p>Puoi aggiungere il calendario alla schermata Home: si apre a schermo intero e funziona anche senza connessione.</p>
+      <div className="onboarding__actions">
+        {canPrompt && <button type="button" className="btn btn--gold" onClick={install}>Installa l’app</button>}
+        {!canPrompt && (
+          <button type="button" className="btn btn--gold" aria-expanded={showHelp} aria-controls="onb-help" onClick={() => setShowHelp((v) => !v)}>
+            Come si installa
           </button>
-          {canInstall && onInstallClick && (
-            <button type="button" className="btn btn--ghost" onClick={onInstallClick}>
-              Installa l'app
-            </button>
-          )}
-        </div>
+        )}
+        <button type="button" className="btn btn--ghost" onClick={onDismiss}>Non ora</button>
       </div>
-    </div>
+      {!canPrompt && showHelp && (
+        <ol id="onb-help" className="onboarding__steps">
+          <li>Apri questa pagina con <strong>Google Chrome</strong> sul telefono Android.</li>
+          <li>Tocca il menu <strong>⋮</strong> in alto a destra.</li>
+          <li>Scegli <strong>Installa app</strong> (oppure <strong>Aggiungi a schermata Home</strong>).</li>
+          <li>Conferma: troverai l’icona tra le tue app.</li>
+        </ol>
+      )}
+    </section>
   );
 }

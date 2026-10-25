@@ -1,323 +1,249 @@
 # Guida alla personalizzazione
 
-Questa guida spiega, punto per punto, dove modificare ogni parte del
-calendario. Ogni sezione indica il file esatto da aprire e un esempio
-prima/dopo.
-
----
+Tutto il contenuto vive in due file: **`config/app.json`** (impostazioni) e **`src/content/advent-content.json`** (i 25 giorni).
+Dopo ogni modifica esegui `npm run validate`: ti dice esattamente quale giorno e quale campo sono sbagliati.
+Nel JSON usa `« »` o `’` nei testi; un `"` dentro una stringa va scritto `\"`.
 
 ## 1. Nome dell'app e dedica iniziale
 
-**File:** `config/app.json`
+File: `src/content/advent-content.json`, blocco `meta` (in alto).
 
 ```diff
-- "appTitle": "Il nostro dicembre",
-- "dedication": "25 giorni, 25 piccoli pezzi di noi. ...",
-+ "appTitle": "Il nostro Natale",
-+ "dedication": "Per te, che rendi speciale anche dicembre. ...",
+-    "title": "Il nostro dicembre",
++    "title": "Il calendario di Giulia",
+-    "dedication": ["Venticinque giorni, venticinque piccole sorprese.", "Questo calendario è il mio modo…"],
++    "dedication": ["Per te, giorno dopo giorno.", "Aprine una al giorno e non avere fretta."],
 ```
 
-## 2. Cambiare l'anno
-
-**File:** `config/app.json`, campo `"year"`.
+Il nome sotto l'icona dell'app è in `config/app.json`:
 
 ```diff
-- "year": 2026,
-+ "year": 2027,
+-  "appName": "Il nostro dicembre",
+-  "shortName": "Dicembre",
++  "appName": "Il calendario di Giulia",
++  "shortName": "Giulia",
 ```
 
-Dopo aver cambiato l'anno, rigenera le date dei 25 contenuti eseguendo
-`npm run content:build` (vedi sezione 4 per i dettagli), perché le date
-in `src/content/advent-content.json` sono derivate dall'anno al momento
-della generazione.
+## 2. Anno
 
-## 3. Configurare l'URL del sito
+Esegui `npm run set-year -- 2027`: aggiorna `year` in `config/app.json` e le 25 date. Rileggi poi i testi che citano il
+solstizio (giorno 21) o giorni specifici. A mano: `config/app.json` → `"year": 2026` e il campo `"date"` di ogni giorno.
 
-**File:** `config/app.json`, campo `"publicUrl"`.
+## 3. URL del sito
+
+File: `config/app.json`. È l'**unico** punto: lo usano la build (base path), il manifest e i link di Telegram.
 
 ```diff
-- "publicUrl": "https://TUO-UTENTE.github.io/christmas-advent/",
-+ "publicUrl": "https://marioRossi.github.io/avvento-per-giulia/",
+-  "publicUrl": "https://UTENTE.github.io/christmas-advent/",
++  "publicUrl": "https://giulio.github.io/nostro-dicembre/",
 ```
 
-Questo singolo valore controlla automaticamente:
-- il "base path" usato da Vite in `vite.config.ts`;
-- il base path usato dal service worker (`scripts/build-sw.mjs`);
-- il link che lo script Telegram costruisce per ogni giorno.
+## 4. Testo di un giorno
 
-Dopo averlo cambiato, esegui `npm run build` per rigenerare tutto
-correttamente.
-
-## 4. Modificare il testo di uno specifico giorno
-
-**File:** `src/content/advent-content.json` (il file "vivo", quello
-letto dall'app) — oppure, se preferisci lavorare sul file sorgente più
-leggibile, `scripts/build-content.mjs` e poi rigenerare con
-`npm run content:build`.
-
-Esempio: cambiare il messaggio del giorno 4 direttamente nel JSON:
+File: `src/content/advent-content.json`, cerca `"day": 9`.
 
 ```diff
-  {
-    "day": 4,
-    "date": "2026-12-04",
-    "type": "message",
-    "title": "Piccola pausa",
-    "preview": "Tre righe per ricordarti una cosa semplice.",
--   "body": "Tra una cosa e l'altra della giornata, volevo solo...",
-+   "body": "Oggi penso solo a quanto mi piace il tuo modo di ridere.",
-    "illustration": "assets/advent/day-04.svg"
-  },
+       "content": { "paragraphs": [
+-        "Se oggi fuori fa freddo, ricordati che…",
++        "Oggi ti ho pensata appena sveglio.",
++        "Metti la sciarpa grande e torna a casa presto."
+       ] }
 ```
 
-**Importante:** se modifichi `src/content/advent-content.json` a mano, i
-tuoi cambiamenti andranno persi se in futuro rilanci
-`npm run content:build` (che lo rigenera da `scripts/build-content.mjs`).
-Scegli un solo "luogo della verità": o modifichi sempre il JSON a mano, o
-modifichi sempre `scripts/build-content.mjs` e rigeneri.
+Ogni giorno ha: `title`, `preview`, `illustration`, `type`, `content` e `reminder` (il testo del messaggio Telegram, max 300 caratteri,
+diverso per ogni giorno). Il `type` decide quali campi servono dentro `content` (vedi sezioni seguenti).
 
 ## 5. Sostituire un'illustrazione con una fotografia
 
-1. Metti la tua foto in `public/assets/photos/`, per esempio
-   `public/assets/photos/giorno-04.jpg`.
-2. Nel contenuto del giorno, cambia il campo `illustration`:
+Le illustrazioni dei giorni sono in `public/assets/advent/day-NN.svg`. Per usare una foto al posto dell'illustrazione:
+
+1. Copia la foto in `public/assets/advent/` come `day-09.jpg`.
+2. Nel JSON, giorno 9:
 
 ```diff
-  {
-    "day": 4,
-    ...
--   "illustration": "assets/advent/day-04.svg"
-+   "illustration": "assets/photos/giorno-04.jpg"
-  },
+-      "illustration": "assets/advent/day-09.svg",
++      "illustration": "assets/advent/day-09.jpg",
 ```
 
-Se il file manca o il percorso è sbagliato, la modal mostra comunque il
-titolo e il testo: l'immagine semplicemente non appare (fallback
-"silenzioso", nessun errore bloccante).
+I percorsi sono sempre **relativi a `public/`**, senza `/` iniziale e senza `http`.
 
-## 6. Aggiungere, rinominare e ottimizzare una fotografia
+## 6. Aggiungere, rinominare, ottimizzare una fotografia
 
-- Metti i file in `public/assets/photos/` con un nome descrittivo e senza
-  spazi, per esempio `montagna-ottobre-2025.jpg` (evita spazi e accenti
-  nei nomi file: usa trattini).
-- Formati consigliati: `.jpg` o `.webp`. Per non appesantire il sito,
-  ridimensiona le foto a un lato massimo di circa 1600px prima di
-  caricarle (puoi usare qualsiasi editor o convertitore che preferisci).
-- Ricorda: essendo il repository pubblico, queste foto sono raggiungibili
-  da chiunque conosca o indovini l'URL esatto del file.
+I giorni di tipo `photo` (3, 11, 19) mostrano `content.image`.
 
-## 7. Modificare un buono (voucher) e il suo stato
-
-**File:** `src/content/advent-content.json`, nel giorno con
-`"type": "voucher"`.
+1. **Ottimizza**: lato lungo ~1600 px, JPEG qualità 80 (o WebP), meglio sotto i 400 KB. Esempio con ImageMagick:
+   `magick originale.jpg -resize 1600x1600 -quality 80 -strip public/assets/photos/mare-estate.jpg`
+2. **Nome**: minuscolo, senza spazi né accenti (`mare-estate.jpg`).
+3. **Collega** nel JSON (giorno 11):
 
 ```diff
-  "voucher": {
--   "instructions": "Mostrami questa pagina quando vuoi riscuotere...",
--   "redeemLabel": "Segna come riscattato",
--   "redeemedLabel": "Riscattato — e rifarei tutto identico"
-+   "instructions": "Scrivimi quando vuoi usare questo buono!",
-+   "redeemLabel": "Ho usato il buono",
-+   "redeemedLabel": "Usato, e rifarei tutto identico"
-  }
+       "content": {
+-        "image": "assets/photos/luci-della-citta.svg",
+-        "alt": "Illustrazione di una città di sera…",
+-        "caption": "A dicembre ogni finestra accesa…"
++        "image": "assets/photos/mare-estate.jpg",
++        "alt": "Noi due sulla spiaggia al tramonto",
++        "caption": "Il giorno in cui ho capito che il mare è più bello con te."
+       }
 ```
 
-Lo **stato** "riscattato" invece non si modifica nel JSON: è salvato in
-`localStorage` quando l'utente tocca il pulsante nell'app. Per
-"resettare" un buono già riscattato durante i test, apri gli strumenti
-sviluppatore del browser e cancella la chiave `christmas-advent:v1` da
-Local Storage (oppure cancella i dati del sito).
+`alt` descrive la foto per chi usa uno screen reader; la `caption` è la dedica. Se il file manca, l'app mostra
+un'illustrazione di riserva con un messaggio gentile. Ricorda: le foto nel repository pubblico sono raggiungibili da tutti
+tramite l'URL. Per trasformare un altro giorno in una foto: cambia `"type": "photo"` e il suo `content` come sopra.
 
-## 8. Cambiare domande e risposte del quiz
+## 7. Buoni
 
-**File:** `src/content/advent-content.json`, nei giorni con
-`"type": "quiz"` (campo `quiz.questions`).
+Giorni 4, 8, 13, 17, 22 (`"type": "voucher"`).
 
 ```diff
-  {
-    "question": "Qual è il modo migliore per iniziare una domenica insieme?",
-    "options": ["Colazione con calma", "Sveglia presto per uscire", "Film sul divano", "Dipende dall'umore"],
--   "correctIndex": 3,
--   "feedbackCorrect": "Esatto: con noi dipende sempre dall'umore...",
--   "feedbackWrong": "Quasi! La verità è che con noi cambia sempre..."
-+   "correctIndex": 0,
-+   "feedbackCorrect": "Sì! La colazione con calma è imbattibile.",
-+   "feedbackWrong": "Quasi, ma per me vince sempre la colazione con calma."
-  }
+       "content": {
+-        "title": "Buono per una cioccolata calda",
+-        "description": "Valido per una cioccolata calda fatta come si deve…",
+-        "redeem": "Quando vuoi usarlo, fammelo sapere…",
+-        "validity": "Valido fino all’Epifania."
++        "title": "Buono per un massaggio ai piedi",
++        "description": "Venti minuti, olio profumato, nessuna protesta.",
++        "redeem": "Mostrami il buono e premi «Segna come usato».",
++        "validity": "Valido fino a febbraio."
+       }
 ```
 
-`correctIndex` è la posizione (si parte da 0) dell'opzione corretta
-nell'array `options`.
+`validity` è facoltativo. Lo **stato** (usato/non usato) è salvato nel telefono, non nel JSON. Per azzerarlo durante i test:
+nel browser, `Impostazioni sito → Cancella dati`, oppure dalla console `localStorage.removeItem('christmas-advent')`.
+Il tasto *Segna come non usato* nella finestra del buono lo riporta indietro. Il buono resta consultabile anche dopo l'uso.
 
-## 9. Configurare un indovinello
+## 8. Quiz (domande e risposte)
 
-**File:** `src/content/advent-content.json`, nei giorni con
-`"type": "game"` e `"game": { "kind": "riddle", ... }`.
+Giorni 5, 12, 20 (`"type": "quiz"`). Ogni domanda:
+
+```json
+{ "question": "Quale colore ha il nastro del mio regalo?",
+  "options": ["Rosso", "Oro", "Verde"],
+  "correctIndex": 1,
+  "correctFeedback": "Esatto, oro!",
+  "wrongFeedback": "Era oro, guarda meglio la prossima volta." }
+```
+
+`correctIndex` conta da **0** (0 = prima risposta). Da 2 a 5 risposte per domanda. In `results` ogni voce ha un `minScore`:
+la prima deve essere `0`, poi crescenti, mai oltre il numero di domande. Per personalizzare con ricordi veri, sostituisci
+le domande generiche con le vostre (es. «Dove ci siamo dati il primo appuntamento?»).
+
+## 9. Indovinello
+
+Giorni 7, 15, 21 (`"type": "game"`, `"kind": "riddle"`).
 
 ```diff
-  "game": {
-    "kind": "riddle",
-    "data": {
-      "intro": "Leggi con calma, poi scrivi la tua risposta.",
--     "riddleText": "Più lo nutri, più cresce in silenzio...",
--     "acceptedAnswers": ["amore", "l'amore", "affetto", "fiducia"],
--     "hint": "Non è qualcosa che si compra...",
--     "solutionReveal": "La risposta era: l'amore..."
-+     "riddleText": "Sono dolce, ma non si mangia. Cosa sono?",
-+     "acceptedAnswers": ["un bacio", "bacio"],
-+     "hint": "C'entrano le labbra.",
-+     "solutionReveal": "La risposta era: un bacio!"
-    }
-  }
+         "kind": "riddle",
+-        "riddle": "Scende dal cielo senza fare rumore…",
+-        "answers": ["neve", "fiocchi di neve", "fiocco di neve"],
+-        "hint": "Quando arriva, tutto intorno si fa silenzioso.",
++        "riddle": "Più ne togli, più diventa grande. Cos'è?",
++        "answers": ["buco", "il buco"],
++        "hint": "Lo trovi nel formaggio.",
 ```
 
-Puoi inserire più varianti accettate in `acceptedAnswers`: il confronto
-ignora maiuscole/minuscole, accenti e spazi iniziali/finali.
+In `answers` metti tutte le risposte accettate: maiuscole, accenti, punteggiatura e articoli iniziali (il, la, un…) vengono ignorati.
+`hint` è facoltativo. `revealText`, `successMessage`, `wrongMessage` sono i messaggi.
 
-## 10. Modificare il memory
+## 10. Memory
 
-**File:** `src/content/advent-content.json`, nel giorno con
-`"type": "game"` e `"game": { "kind": "memory", ... }`.
+Giorni 10 e 18 (`"kind": "memory"`). Da 3 a 10 coppie (6 coppie = 12 carte).
 
 ```diff
-  "game": {
-    "kind": "memory",
-    "data": {
-      "intro": "Gira due carte alla volta e trova tutte le coppie.",
--     "symbols": ["🎄", "🎁", "⭐", "🔔", "❄️", "🕯️", "🧦", "🦌"]
-+     "symbols": ["🎄", "🎁", "⭐", "🔔", "❄️", "🕯️", "🧦", "💛"]
-    }
-  }
+         "pairs": [
+           { "id": "star", "label": "Stella", "image": "assets/decor/star.svg" },
+-          { "id": "heart", "label": "Cuore", "image": "assets/decor/heart.svg" }
++          { "id": "photo1", "label": "Noi al mare", "image": "assets/photos/mare-estate.jpg" }
 ```
 
-Ogni simbolo nell'array genera una coppia di carte: con 8 simboli ottieni
-16 carte (una griglia 4×4).
+Ogni `id` deve essere diverso. Immagini quadrate funzionano meglio. `label` è letto dagli screen reader.
+Disponibili in `public/assets/decor/`: star, bell, candy-cane, tree, gift, heart, wreath, mitten, candle, snowflake, ornament, stocking.
 
-## 11. Modificare la lettera finale del 25 dicembre
+## 11. Lettera finale del 25 dicembre
 
-**File:** `src/content/advent-content.json`, giorno `25`
-(`"special": true`).
+Giorno 25 (`"type": "letter"`). Per le altre lettere (14, 23) valgono gli stessi campi.
 
 ```diff
-  {
-    "day": 25,
-    "special": true,
-    "title": "Buon Natale, amore mio",
--   "body": "Siamo arrivati fino a qui, casella dopo casella...",
-+   "body": "Il tuo testo personalizzato per il 25 dicembre...",
-    "illustration": "assets/advent/day-25.svg"
-  }
+         "greeting": "Amore mio,",
+         "paragraphs": [
+-          "eccoci arrivati in fondo a questo calendario…",
++          "Questo Natale è il primo in cui…",
+         ],
+         "closing": "Buon Natale, con tutto il cuore,",
+         "signature": "Il tuo ragazzo",
+         "gift": {
+-          "title": "Il regalo che non si scarta",
+-          "description": "Dodici appuntamenti, uno al mese…"
++          "title": "Un weekend a Praga",
++          "description": "Partiamo a febbraio. Biglietti già prenotati."
+         }
 ```
 
-La grafica speciale del 25 dicembre è sempre `assets/advent/day-25-special.svg`
-(gestita automaticamente quando `"special": true`), indipendentemente dal
-campo `illustration` di quel giorno.
+Ogni elemento di `paragraphs` è un paragrafo. `gift` è facoltativo: appare come pulsante «Scopri il regalo» sotto la lettera.
 
-## 12. Cambiare i colori e lo stile
+## 12. Colori e stile
 
-**File:** `src/styles/global.css`, variabili in cima al file (`:root`).
+File: `src/styles.css`, blocco `:root` in alto.
 
 ```diff
-  :root {
--   --fir: #1f4d3a;
--   --bordeaux: #7a2335;
--   --gold: #c9a24b;
-+   --fir: #0f3d5c;      /* es. blu notte al posto del verde abete */
-+   --bordeaux: #7a2335;
-+   --gold: #c9a24b;
+-  --bordeaux: #7b2233;
++  --bordeaux: #5a2a6b;
 ```
 
-Tutti gli altri colori dei componenti derivano da queste variabili, quindi
-cambiandole aggiorni l'intera palette in modo coerente.
+Per la PWA (barra del telefono e sfondo di avvio) cambia anche `themeColor` e `backgroundColor` in `config/app.json`.
+Le illustrazioni usano la loro palette in `scripts/generate-assets.mjs` (oggetto `C`): modificala e lancia `npm run assets`
+(le icone PNG richiedono il pacchetto `sharp`: `npm i -D sharp` solo se vuoi rigenerarle).
 
-## 13. Usare la modalità anteprima
+## 13. Modalità anteprima
 
-In sviluppo (`npm run dev`), in cima alla pagina trovi una barra "Modalità
-anteprima (solo sviluppo)" con un menu a tendina: scegli un giorno di
-dicembre e l'app si comporta come se oggi fosse quel giorno, senza dover
-aspettare o cambiare l'orologio del dispositivo. Questa barra **non
-esiste** nella build pubblicata (`npm run build` / sito online): è stata
-rimossa automaticamente dal codice di produzione.
+`npm run dev`, poi in basso a sinistra compare il pannello **Anteprima**: scegli una data (es. 12 dicembre) e le caselle
+si sbloccano di conseguenza. In alternativa apri `http://localhost:5173/?preview=2026-12-12`.
+La modalità esiste **solo in sviluppo**: nella versione pubblicata non c'è e `?preview=` è ignorato.
+Per ripartire da zero svuota i dati del sito di `localhost`.
 
-## 14. Aggiornare e ripubblicare l'app
-
-1. Fai le tue modifiche ai file.
-2. (facoltativo ma consigliato) `npm test` per assicurarti che nulla si
-   sia rotto.
-3. `git add . && git commit -m "Aggiorno i contenuti" && git push`
-4. Il workflow `deploy.yml` ripubblica automaticamente il sito in pochi
-   minuti. Nessun comando manuale aggiuntivo è necessario.
-
-## 15. Configurare il bot Telegram
-
-1. Apri Telegram e scrivi a [@BotFather](https://t.me/BotFather).
-2. Invia `/newbot`, scegli un nome e uno username per il bot. BotFather ti
-   restituirà un **token** nel formato `123456789:ABCdefGhIJKlmNoPQRstuVWxyz`.
-3. Ottieni il tuo `chat_id`: il modo più semplice è scrivere un messaggio
-   al tuo nuovo bot (qualsiasi testo, anche "ciao"), poi aprire nel
-   browser:
-   `https://api.telegram.org/bot<IL_TUO_TOKEN>/getUpdates`
-   e cercare il campo `"chat":{"id": ...}` nella risposta JSON: quel
-   numero è il tuo `chat_id`.
-4. **Fondamentale:** devi aver scritto almeno un messaggio al bot (comando
-   `/start` o un testo qualsiasi) prima che possa scriverti lui: è una
-   regola di Telegram, non di questo progetto.
-
-## 16. Aggiungere i GitHub Actions Secrets
-
-1. Sul repository GitHub: **Settings → Secrets and variables → Actions**.
-2. **New repository secret** → nome `TELEGRAM_BOT_TOKEN`, valore il token
-   ottenuto da BotFather.
-3. **New repository secret** → nome `TELEGRAM_CHAT_ID`, valore il tuo
-   chat id.
-4. Non inserire mai questi valori nel codice, in `config/app.json` o in
-   qualunque altro file del repository.
-
-## 17. Eseguire un test manuale in dry-run
-
-Dalla scheda **Actions** del repository su GitHub:
-
-1. Apri il workflow **"Reminder Telegram dell'avvento"**.
-2. Clicca **Run workflow**.
-3. Nel campo "Giorno da testare" scrivi un numero da 1 a 25 (es. `5`).
-4. Lascia **"Invia davvero" su `false`** (è il default).
-5. Avvia ed esamina i log: vedrai il testo esatto del messaggio e il link
-   generato, ma **nessun messaggio Telegram reale verrà inviato**.
-
-In locale puoi fare lo stesso con:
+## 14. Aggiornare e ripubblicare
 
 ```bash
-node scripts/send-advent-reminder.mjs --day=5 --dry-run
+npm run check          # facoltativo ma consigliato
+git add -A && git commit -m "Aggiorno i contenuti" && git push
 ```
 
-## 18. Effettuare un invio reale di prova
+Il push sul branch `main` avvia il deploy (1–2 minuti, controlla la scheda *Actions*).
+**Sul telefono**: apri l'app; quando compare «È disponibile una versione aggiornata» tocca **Aggiorna**.
+Se non compare, chiudi del tutto l'app e riaprila (a volte serve due volte).
 
-Stessa procedura del punto 17, ma impostando **"Invia davvero" su
-`true`**. Lo script invierà davvero il messaggio del giorno scelto al tuo
-`chat_id`. In locale (solo per un test rapido, con le variabili
-esportate temporaneamente nella tua shell):
+## 15. Bot Telegram, Secrets, prove e invio reale
+
+I passaggi completi (BotFather, `/start`, chat id, Secrets) sono nel **README → Reminder Telegram**. In sintesi:
+
+1. Crea il bot con @BotFather, copia il token.
+2. La destinataria preme **Avvia** sul bot.
+3. *Settings → Secrets and variables → Actions → New repository secret*: `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID`.
+4. **Dry-run** (non invia nulla): *Actions → Advent reminder → Run workflow* → `day` = 7, `dry_run` = `true`. Leggi il log.
+5. **Invio reale di prova**: stessa schermata con `dry_run` = `false`: arriva un messaggio «🧪 [PROVA]» con il pulsante *Apri la sorpresa*.
+6. **Verifica del workflow pianificato**: scheda *Actions → Advent reminder* attiva e senza avvisi, repository con attività recente
+   (vedi la checklist nel README). Il primo run reale è il 1° dicembre dopo le 09:07.
+
+In locale puoi provare lo script senza inviare nulla:
 
 ```bash
-TELEGRAM_BOT_TOKEN=... TELEGRAM_CHAT_ID=... node scripts/send-advent-reminder.mjs --day=5 --send
+EVENT_NAME=workflow_dispatch REMINDER_DAY=7 DRY_RUN=true node --experimental-strip-types scripts/send-advent-reminder.mjs
 ```
 
-## 19. Verificare il workflow pianificato
+Il testo di ogni messaggio è il campo `reminder` del giorno in `advent-content.json`, e il link viene costruito da `publicUrl`:
 
-- Vai su **Actions → Reminder Telegram dell'avvento** e controlla che
-  esistano esecuzioni passate (quelle schedulate compaiono con l'icona
-  dell'orologio).
-- Se non vedi esecuzioni programmate da un po' di tempo, controlla la nota
-  sui 60 giorni di inattività nel README: GitHub potrebbe aver disattivato
-  lo schedule.
-- Puoi sempre forzare un invio dei giorni mancanti con `workflow_dispatch`
-  (punto 18).
+```diff
+-      "reminder": "Buongiorno ❄️ Oggi ti aspetta un indovinello…",
++      "reminder": "Buongiorno amore ❄️ Oggi c’è un indovinello solo per te.",
+```
 
-## 20. Aggiornare la PWA dopo una nuova pubblicazione
+## 16. Aggiornare la PWA dopo una nuova pubblicazione
 
-Non serve fare nulla di manuale: ogni build genera automaticamente una
-nuova versione della cache del service worker
-(`scripts/build-sw.mjs`, eseguito da `npm run build` prima di `vite
-build`). Alla prossima apertura dell'app, il service worker scarica in
-background la nuova versione e la rende attiva. Se un dispositivo sembra
-"bloccato" su una versione vecchia, chiudi completamente l'app (o il tab)
-e riaprila.
+Ogni build produce una nuova versione della cache (cambia al variare dei file). Il telefono la scarica in background e
+mostra il banner **Aggiorna**; non si ricarica mai da solo mentre stai guardando una sorpresa. Se il banner non appare:
+chiudi l'app dai recenti e riaprila con la connessione attiva.
+
+## Aggiungere una nuova tipologia o un nuovo gioco
+
+Aggiungi il tipo in `src/content/types.ts` (tipi + validazione), il renderer in `src/components/renderers/` e il `case`
+in `src/components/SurpriseModal.tsx`. La logica di gioco va in `src/games/` (funzioni pure, facili da testare).

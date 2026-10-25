@@ -1,6 +1,0 @@
-<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Indovinello">
-  <rect width="400" height="260" fill="#fbf4e6"/>
-  <circle cx="200" cy="110" r="55" fill="#7a2335" opacity="0.12"/>
-  <text x="200" y="122" text-anchor="middle" font-family="Georgia, serif" font-size="46" fill="#1f4d3a">?!</text>
-  <text x="200" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#163a2b">Indovinello</text>
-</svg>

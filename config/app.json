@@ -1,13 +1,14 @@
 {
+  "appName": "Il nostro dicembre",
+  "shortName": "Dicembre",
+  "description": "Un calendario dell'Avvento fatto di piccole sorprese, giorno dopo giorno.",
   "year": 2026,
   "timezone": "Europe/Rome",
-  "appTitle": "Il nostro dicembre",
-  "dedication": "25 giorni, 25 piccoli pezzi di noi. Aprili uno al giorno, ti aspetto dall'altra parte di ognuno. ❤️",
-  "publicUrl": "https://TUO-UTENTE.github.io/christmas-advent/",
-  "repository": "TUO-UTENTE/christmas-advent",
-  "shortName": "Avvento",
-  "themeColor": "#1f4d3a",
-  "backgroundColor": "#fbf4e6",
-  "reminderTime": "09:07",
-  "finalDay": 25
+  "publicUrl": "https://UTENTE.github.io/christmas-advent/",
+  "firstDay": 1,
+  "lastDay": 25,
+  "reminder": { "hour": 9, "minute": 7 },
+  "themeColor": "#123a2f",
+  "backgroundColor": "#f5ead3",
+  "storageKey": "christmas-advent"
 }
