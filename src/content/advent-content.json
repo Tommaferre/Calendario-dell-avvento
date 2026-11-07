@@ -22,15 +22,15 @@
     },
     {
       "day": 2, "date": "2026-12-02", "type": "message",
-      "title": "Una stella in tasca",
-      "preview": "Un pensiero piccolo, da portare con te.",
+      "title": "Affittuaria fissa 🏠",
+      "preview": "Un pensiero su chi, ormai, ha preso casa dentro il mio cuore.",
       "illustration": "assets/advent/day-02.svg",
-      "reminder": "Buongiorno ✨ Oggi c’è una stella che ti aspetta, da mettere in tasca per la giornata.",
+      "reminder": "Buongiorno! 🏠 Nella casella di oggi c'è una dichiarazione, CORRI!",
       "content": { "paragraphs": [
-        "Non tutte le sorprese devono essere grandi.",
-        "Alcune sono semplicemente persone che entrano nella tua vita e poi, senza chiedere il permesso, ne pagando l'affitto, ci rimangono.",
-        "Tu effettivamente hai fatto un po' così, ho sperato un anno e più, finchè non hai deciso che era il caso di restare e che ero il miglior partito che potessi trovare.",
-        "Anche tu non sei così male dai 😉"
+        "Oggi parliamo di un contratto mai firmato.",
+        "Quello con cui sei entrata nella mia vita, nel mio cuore e nella mia testa, e, senza nessun preavviso, né alcun segno di pagarmi un affitto, ci sei rimasta.",
+        "Ti ho aspettata un anno e più, finché non hai deciso che valeva la pena restare, e che ero il miglior partito che potessi trovare, ormai son quasi quattro anni che stai qua, ogni tanto con qualche lamentela, ma sempre con la voglia di restare.",
+        "P.S. nemmeno tu sei così male come partito dai 😉"
       ] }
     },
     {
@@ -42,7 +42,7 @@
       "content": {
         "image": "assets/photos/day-03.jpg",
         "alt": "Illustrazione di un albero di natale... Ah no, siamo noi!",
-        "caption": "Un ricordo dal nostro dicembre del 2024: tutti addobbati, come un albero di Natale! 😆"
+        "caption": "Un ricordo dal nostro dicembre del 2024: illustrazione di un albero di natale... Ah no, siamo noi!😆"
       }
     },
     {
@@ -50,10 +50,10 @@
       "title": "Buono: cioccolata calda",
       "preview": "Il primo buono da riscattare.",
       "illustration": "assets/advent/day-04.svg",
-      "reminder": "Buongiorno ☕ Nella casella di oggi c’è qualcosa da riscattare! ",
+      "reminder": "Buongiorno! ☕ Nella casella di oggi c’è qualcosa da riscattare! ",
       "content": {
         "title": "Buono per una cioccolata calda",
-        "description": "Valido per una cioccolata calda fatta come si deve: densa, con la panna, e un po’ di tempo per berla senza guardare l’orologio.",
+        "description": "Valido per una cioccolata calda fatta come si deve: densa, caldissima, e sotto la copertina sul divano a guardare un bel film, oppure fuori per prendersi una pausa dal freddo.",
         "redeem": "Quando vuoi usarlo, fammelo sapere e poi premi «Segna come usato». Scegli tu il giorno e il posto: a casa o fuori.",
         "validity": "Valido fino alla fine del freddo! 🕒"
       }
@@ -63,55 +63,72 @@
       "title": "Quanto sai di Natale?",
       "preview": "Cinque domande per scaldare i motori.",
       "illustration": "assets/advent/day-05.svg",
-      "reminder": "Buongiorno 🎁 Oggi si gioca: cinque domande sul Natale. Pronta a battere il quiz?",
+      "reminder": "Buongiorno! 🎁 Oggi si gioca: cinque domande sul Natale!",
       "content": {
-        "intro": "Cinque domande sulle tradizioni di Natale. Non c’è un premio in palio… a parte la soddisfazione (scegli tu come considerare questo termine 😉).",
+        "intro": "Cinque domande sul Natale. Se rispondi bene, magari ti aspetta una ricompensa… se rispondi male, potrei trovare comunque il modo di consolarti. 😉",
         "questions": [
-          { "question": "Sotto quale pianta, secondo la tradizione, ci si scambia un bacio a Natale?",
-            "options": ["Vischio", "Agrifoglio", "Edera", "Abete"], "correctIndex": 0,
-            "correctFeedback": "Esatto! Il vischio porta fortuna e dà diritto al bacio.",
-            "wrongFeedback": "Era il vischio: la tradizione vuole un bacio per chi ci si trova sotto." },
-          { "question": "Di quale città italiana è tipico il panettone?",
-            "options": ["Verona", "Milano", "Siena", "Napoli"], "correctIndex": 1,
-            "correctFeedback": "Proprio così: il panettone è milanese.",
-            "wrongFeedback": "Il panettone è milanese. Il pandoro, invece, è un’altra storia (ci arriveremo)." },
-          { "question": "Quali due animali stanno tradizionalmente accanto alla mangiatoia nel presepe?",
-            "options": ["Bue e asinello", "Cammello e pecora", "Cavallo e capra", "Mucca e gallo"], "correctIndex": 0,
-            "correctFeedback": "Giusto! Il bue e l’asinello non mancano mai.",
-            "wrongFeedback": "Sono il bue e l’asinello, i due custodi più fedeli del presepe." },
-          { "question": "Come si chiama la pianta dalle foglie rosse a forma di stella, originaria del Messico?",
-            "options": ["Ciclamino", "Stella di Natale", "Azalea", "Orchidea"], "correctIndex": 1,
-            "correctFeedback": "Bravissima: la stella di Natale, appunto.",
-            "wrongFeedback": "È la stella di Natale, e il nome era già un indizio." },
-          { "question": "In Italia, chi porta i doni nella notte tra il 5 e il 6 gennaio?",
-            "options": ["La Befana", "Santa Lucia", "San Nicola", "Gesù Bambino"], "correctIndex": 0,
-            "correctFeedback": "Esatto, la Befana! Con calza e scopa.",
-            "wrongFeedback": "È la Befana, con la sua scopa e la calza piena." }
+          { "question": "In quale Paese si è diffusa la tradizione di decorare l’albero di Natale con palline di vetro, grazie ai soffiatori di vetro di Lauscha?",
+            "options": ["Austria", "Germania", "Svizzera", "Repubblica Ceca"], "correctIndex": 1,
+            "correctFeedback": "Bravissima! La tradizione delle palline di vetro colorate nacque in Germania, nella cittadina di Lauscha, famosa per i suoi maestri soffiatori di vetro. Hai occhio per i dettagli natalizi!",
+            "wrongFeedback": "Peccato! 🎄 La risposta corretta è la Germania: proprio a Lauscha nacque la tradizione delle palline di vetro soffiate per decorare l'albero di Natale. Un piccolo ripasso prima di addobbare il nostro albero! ❤️" },
+          { "question": "Quale santo ha ispirato principalmente la figura moderna di Babbo Natale?",
+            "options": ["San Patrizio", "San Francesco", "San Nicola", "San Valentino"], "correctIndex": 2,
+            "correctFeedback": "Esatto! San Nicola, vescovo di Myra, è considerato uno dei principali ispiratori della figura di Babbo Natale. 🎅",
+            "wrongFeedback": "Non proprio! La figura di Babbo Natale affonda le sue radici nella storia di San Nicola, famoso per la sua generosità." },
+          { "question": "In quale anno venne creato per la prima volta il personaggio di Rudolph, la renna dal naso rosso?",
+            "options": ["1939", "1949", "1959", "1969"], "correctIndex": 0,
+            "correctFeedback": "Bravissima! Rudolph nacque nel 1939 da un libretto promozionale commissionato dalla catena americana Montgomery Ward. 🦌",
+            "wrongFeedback": "Non questa volta! Rudolph fu creato nel 1939 e inizialmente comparve in un libretto pubblicitario." },
+          { "question": "Domanda quindi d'obbligo dopo la precedente, secondo la tradizione più diffusa, quanti sono complessivamente i nomi delle renne di Babbo Natale, contando anche Rudolph?",
+            "options": ["Sette", "Otto", "Nove", "Dieci"], "correctIndex": 2,
+            "correctFeedback": "Esatto! Sono nove: le otto renne tradizionali più Rudolph! 🦌",
+            "wrongFeedback": "Nooo! Sono nove: le otto renne tradizionali più Rudolph!" },
+          { "question": "In quale Paese nacque la tradizione del calendario dell'Avvento nella sua forma moderna, con finestrelle da aprire ogni giorno?",
+            "options": ["Svezia", "Germania", "Danimarca", "Regno Unito"], "correctIndex": 1,
+            "correctFeedback": "Esatto! Il calendario dell'Avvento moderno nacque in Germania, ma scusa quanta roba natalizia hanno fatto sti tedeschi?",
+            "wrongFeedback": "Peccato! Il calendario dell'Avvento ha origini tedesche... Certo che ne hanno fatte di robe di Natale sti crucchi!" }
         ],
         "results": [
-          { "minScore": 0, "title": "Un inizio dolce", "text": "Il Natale è fatto anche di cose da scoprire. Certo che però sei parecchio scarsa..." },
-          { "minScore": 3, "title": "Quasi esperta", "text": "Ottimo risultato! Ti manca pochissimo per essere un’esperta di tradizioni Natalizie." },
-          { "minScore": 5, "title": "Campionessa di Natale", "text": "Punteggio pieno! Il titolo è tuo! 🎉" }
+          { "minScore": 0, "title": "Grinch in incognito", "text": "Il Natale è fatto anche di cose da scoprire. Certo che però non ne sai manco mezza..." },
+          { "minScore": 2, "title": "Elfa apprendista", "text": "e la sei cavata, ma per entrare nella squadra ufficiale serve ancora un po' di allenamento." },
+          { "minScore": 4, "title": "Esperta del Natale", "text": "omplimenti! Babbo Natale potrebbe quasi chiederti una consulenza." },
+          { "minScore": 5, "title": "Direttrice del Polo Nord", "text": "Punteggio perfetto! Da oggi le renne rispondono direttamente a te. 🦌" }
         ]
       }
     },
     {
-      "day": 6, "date": "2026-12-06", "type": "message",
-      "title": "Le piccole cose",
-      "preview": "Quelle che rendono bello un giorno qualunque.",
-      "illustration": "assets/advent/day-06.svg",
-      "reminder": "Buongiorno 🔔 Oggi nella casella c’è un pensiero sulle piccole cose.",
-      "content": { "paragraphs": [
-        "A dicembre le giornate sono corte, e proprio per questo si imparano a notare le piccole cose: la luce che si accende nel tardo pomeriggio, il vapore su una tazza, una sciarpa che sa di casa.",
-        "Mi piace pensare che anche noi siamo fatti così, di piccole cose messe una accanto all’altra. Sono quelle che, alla fine, contano di più."
-      ] }
+    "day": 6,
+    "date": "2026-12-06",
+    "type": "message",
+    "title": "BOLLETTINO NATALIZIO EDIZIONE SPECIALE",
+    "preview": "È UFFICIALE: MANCA SEMPRE MENO A NATALE!",
+    "illustration": "assets/advent/day-06.svg",
+    "reminder": "Buongiorno! 🔔 Attenzionee! Bollettino Natalizio  Edizione Speciale!!",
+    "content": { "paragraphs": [
+        "📰 BOLLETTINO NATALIZIO",
+        "EDIZIONE SPECIALE  6 DICEMBRE 2026",
+        "🚨 BUONGIORNO! ATTENZIONE, ATTENZIONE!",
+        "È UFFICIALE: MANCA SEMPRE MENO A NATALE! 🎄",
+        "La popolazione è in fermento, i supermercati sono presi d'assalto e Mariah Carey è ufficialmente uscita dal congelatore.",
+        "Secondo fonti altamente attendibili (io), le prossime settimane saranno caratterizzate da:",
+        "🍫 +300% di consumo di cioccolata: gli esperti prevedono un'impennata senza precedenti.",
+        "🍽️ ALLARME CENONI: le cene natalizie metteranno a dura prova qualsiasi bottone dei pantaloni. Alle inevitabili interazioni sociali con i parenti seguiranno numerosi sbuffate. 😤",
+        "🍷 FAKE NEWS DELL'ANNO: la frase «quest'anno non bevo» è stata ufficialmente dichiarata inattendibile.",
+        "🚨 ULTIM'ORA – CASO CALENDARIO DELL'AVVENTO",
+        "Una ragazza di 23 anni è stata avvistata mentre aspettava con impazienza l'apertura della prossima casellina del calendario dell'Avvento.",
+        "Gli investigatori sospettano che la suddetta ragazza possa essere particolarmente viziata e che le sue aspettative nei confronti dei prossimi regali siano decisamente elevate.",
+        "Le indagini sono ancora in corso.",
+        "È TUTTO PER OGGI!",
+        "Restate sintonizzati per ulteriori aggiornamenti e, soprattutto, non dimenticate di comportarvi bene: Babbo Natale osserva tutto. 👀",
+        "La redazione vi augura una splendida giornata e un felice avvicinamento al Natale! ❤️"
+      ]}
     },
     {
       "day": 7, "date": "2026-12-07", "type": "game",
       "title": "L’indovinello della neve",
       "preview": "Un enigma bianco e silenzioso.",
       "illustration": "assets/advent/day-07.svg",
-      "reminder": "Buongiorno ❄️ Oggi ti aspetta un indovinello. Scommetto che ci arrivi subito.",
+      "reminder": "Buongiorno! ❄️ Oggi ti aspetta un indovinello. Scommetto che ci arrivi subito.",
       "content": {
         "kind": "riddle",
         "intro": "Leggi con calma e scrivi la risposta. Se ti blocchi, c’è un indizio.",
@@ -128,7 +145,7 @@
       "title": "Buono: serata sul divano",
       "preview": "Coperta, film e nessuna fretta.",
       "illustration": "assets/advent/day-08.svg",
-      "reminder": "Buongiorno 🎬 Nella casella di oggi c’è un buono per una serata tranquilla.",
+      "reminder": "Buongiorno! 🎬 Nella casella di oggi c’è un buono per una serata tranquilla.",
       "content": {
         "title": "Buono per una serata film e coperta",
         "description": "Una serata sul divano: il film lo scegli tu, la coperta è abbondante, gli snack non mancano e i telefoni restano lontani.",
@@ -141,7 +158,7 @@
       "title": "Fuori fa freddo",
       "preview": "Un pensiero per le giornate più grigie.",
       "illustration": "assets/advent/day-09.svg",
-      "reminder": "Buongiorno 🧤 Oggi c’è qualcosa di caldo nella casella. Copriti bene!",
+      "reminder": "Buongiorno! 🧤 Oggi c’è qualcosa di caldo nella casella. Copriti bene!",
       "content": { "paragraphs": [
         "Se oggi fuori fa freddo, ricordati che il caldo non viene solo dai cappotti. Viene anche da chi ti pensa, da un messaggio inatteso, da una voce che ti fa ridere al momento giusto.",
         "Ecco: questo è il mio guanto in più, da infilare nella tasca di sinistra. Tienilo per i momenti in cui serve."
@@ -152,7 +169,7 @@
       "title": "Il memory delle decorazioni",
       "preview": "Trova tutte le coppie nascoste.",
       "illustration": "assets/advent/day-10.svg",
-      "reminder": "Buongiorno 🎄 Oggi c’è un memory natalizio. Quanti tentativi ti serviranno?",
+      "reminder": "Buongiorno! 🎄 Oggi c’è un memory natalizio. Quanti tentativi ti serviranno?",
       "content": {
         "kind": "memory",
         "intro": "Gira due carte alla volta e trova le coppie uguali. Meno tentativi fai, meglio è: ma si può sempre rigiocare.",
@@ -172,7 +189,7 @@
       "title": "Le luci della città",
       "preview": "Una sera d’inverno, tante finestre accese.",
       "illustration": "assets/advent/day-11.svg",
-      "reminder": "Buongiorno 🌃 Oggi la casella mostra una città piena di luci. Vieni a guardare.",
+      "reminder": "Buongiorno! 🌃 Oggi la casella mostra una città piena di luci. Vieni a guardare.",
       "content": {
         "image": "assets/photos/luci-della-citta.svg",
         "alt": "Illustrazione di una città di sera, con tante finestre illuminate e le luminarie tra i palazzi",
@@ -184,7 +201,7 @@
       "title": "Quiz: tradizioni italiane",
       "preview": "Presepi, dolci e feste di dicembre.",
       "illustration": "assets/advent/day-12.svg",
-      "reminder": "Buongiorno 🥧 Oggi un quiz sulle tradizioni italiane. Si parla anche di dolci!",
+      "reminder": "Buongiorno! 🥧 Oggi un quiz sulle tradizioni italiane. Si parla anche di dolci!",
       "content": {
         "intro": "Un secondo quiz, un po’ più goloso. Cinque domande sulle tradizioni italiane di dicembre.",
         "questions": [
@@ -221,7 +238,7 @@
       "title": "Buono: passeggiata con le luci",
       "preview": "Una serata a naso in su, tra le luminarie.",
       "illustration": "assets/advent/day-13.svg",
-      "reminder": "Buongiorno 🏮 Oggi nella casella c’è un buono da usare quando verrà buio presto.",
+      "reminder": "Buongiorno! 🏮 Oggi nella casella c’è un buono da usare quando verrà buio presto.",
       "content": {
         "title": "Buono per una passeggiata sotto le luci",
         "description": "Una passeggiata serale tra luminarie e vetrine, con sciarpa, mani in tasca e tutto il tempo che serve. Fermata obbligatoria per qualcosa di caldo da bere.",
@@ -234,7 +251,7 @@
       "title": "A metà strada",
       "preview": "Una lettera, qualche giorno dopo l’inizio.",
       "illustration": "assets/advent/day-14.svg",
-      "reminder": "Buongiorno 💌 Oggi c’è una lettera nella casella. Trova cinque minuti tranquilli.",
+      "reminder": "Buongiorno! 💌 Oggi c’è una lettera nella casella. Trova cinque minuti tranquilli.",
       "content": {
         "greeting": "Cara,",
         "paragraphs": [
@@ -252,7 +269,7 @@
       "title": "L’indovinello dell’omino",
       "preview": "Ha il cappello ma non ha la testa.",
       "illustration": "assets/advent/day-15.svg",
-      "reminder": "Buongiorno ⛄ Nuovo indovinello in arrivo. Questo è un po’ più furbo del primo.",
+      "reminder": "Buongiorno! ⛄ Nuovo indovinello in arrivo. Questo è un po’ più furbo del primo.",
       "content": {
         "kind": "riddle",
         "intro": "Un indovinello un po’ più furbo. Scrivi la risposta o chiedi l’indizio.",
@@ -271,8 +288,10 @@
       "illustration": "assets/advent/day-16.svg",
       "reminder": "Buongiorno! Oggi sono quattro anni insieme! E stasera andiamo a sfidare il destino!!",
       "content": { "paragraphs": [
-        "Buongiorno amore ❤️ Oggi sono quattro anni insieme, e non smetto di ringraziare il destino per averti incontrata.",
-        "Quattro anni di risate, di avventure, di momenti condivisi e un sacco di film visti insieme. E stasera, andiamo a vedere se il destino ucciderà tutti gli avengers..."
+        "Buongiorno! amore ❤️ ",
+        "Oggi sono quattro anni insieme, e non smetto di ringraziare il destino per averti incontrata.",
+        "Quattro anni di risate, di avventure, di momenti condivisi e un sacco di film visti insieme. ",
+        "E stasera, andiamo a vedere se il destino ucciderà tutti gli avengers..."
       ] }
     },
     {
@@ -280,7 +299,7 @@
       "title": "Buono: cena fatta da me",
       "preview": "Un menù deciso da te, cucinato da me.",
       "illustration": "assets/advent/day-17.svg",
-      "reminder": "Buongiorno 🍽️ Nella casella di oggi c’è un buono per una cena speciale. Fai pure la difficile!",
+      "reminder": "Buongiorno! 🍽️ Nella casella di oggi c’è un buono per una cena speciale. Fai pure la difficile!",
       "content": {
         "title": "Buono per una cena cucinata da me",
         "description": "Una cena completa preparata con le mie mani, dall’antipasto al dolce. Tu scegli il menù, io mi occupo di tutto, compresi i piatti da lavare.",
@@ -293,7 +312,7 @@
       "title": "Il memory del camino",
       "preview": "Otto coppie: questa volta è più difficile.",
       "illustration": "assets/advent/day-18.svg",
-      "reminder": "Buongiorno 🕯️ Oggi un memory più difficile del primo. Otto coppie da trovare.",
+      "reminder": "Buongiorno! 🕯️ Oggi un memory più difficile del primo. Otto coppie da trovare.",
       "content": {
         "kind": "memory",
         "intro": "Otto coppie da trovare, stavolta. Concentrati e prenditi il tuo tempo.",
@@ -315,7 +334,7 @@
       "title": "Un pomeriggio d’inverno",
       "preview": "Come me lo immagino, insieme.",
       "illustration": "assets/advent/day-19.svg",
-      "reminder": "Buongiorno 🔥 Oggi la casella mostra un pomeriggio che mi piacerebbe vivere con te.",
+      "reminder": "Buongiorno! 🔥 Oggi la casella mostra un pomeriggio che mi piacerebbe vivere con te.",
       "content": {
         "image": "assets/photos/pomeriggio-invernale.svg",
         "alt": "Illustrazione di un camino acceso con due poltrone e due tazze fumanti",
@@ -327,7 +346,7 @@
       "title": "Quiz: Natale nel mondo",
       "preview": "Cinque domande per fare il giro del pianeta.",
       "illustration": "assets/advent/day-20.svg",
-      "reminder": "Buongiorno 🌍 Oggi si viaggia con un quiz: il Natale nel mondo.",
+      "reminder": "Buongiorno! 🌍 Oggi si viaggia con un quiz: il Natale nel mondo.",
       "content": {
         "intro": "Un giro del mondo in cinque domande, senza passaporto e senza valigia.",
         "questions": [
@@ -364,7 +383,7 @@
       "title": "L’indovinello della notte più lunga",
       "preview": "Oggi il sole si ferma per un attimo.",
       "illustration": "assets/advent/day-21.svg",
-      "reminder": "Buongiorno 🌙 Oggi è il giorno più corto dell’anno. L’indovinello è a tema.",
+      "reminder": "Buongiorno! 🌙 Oggi è il giorno più corto dell’anno. L’indovinello è a tema.",
       "content": {
         "kind": "riddle",
         "intro": "Il 21 dicembre è speciale: l’indovinello di oggi parla proprio di questo.",
@@ -381,7 +400,7 @@
       "title": "Buono Jolly",
       "preview": "Una giornata in cui decidi tu.",
       "illustration": "assets/advent/day-22.svg",
-      "reminder": "Buongiorno 🎟️ Oggi nella casella c’è un Jolly. Pensa bene come usarlo.",
+      "reminder": "Buongiorno! 🎟️ Oggi nella casella c’è un Jolly. Pensa bene come usarlo.",
       "content": {
         "title": "Buono Jolly: oggi decidi tu",
         "description": "Una giornata o una serata in cui decidi tutto tu: cosa fare, dove andare, cosa mangiare e quando tornare a casa. Io mi adeguo con il sorriso.",
@@ -394,7 +413,7 @@
       "title": "Quasi arrivati",
       "preview": "Una lettera sulla soglia del Natale.",
       "illustration": "assets/advent/day-23.svg",
-      "reminder": "Buongiorno 🦌 Il Natale è quasi qui. Oggi una lettera ti aspetta nella casella.",
+      "reminder": "Buongiorno! 🦌 Il Natale è quasi qui. Oggi una lettera ti aspetta nella casella.",
       "content": {
         "greeting": "Cara,",
         "paragraphs": [
@@ -411,7 +430,7 @@
       "title": "La notte prima",
       "preview": "Ancora una notte, poi si apre l’ultima casella.",
       "illustration": "assets/advent/day-24.svg",
-      "reminder": "Buongiorno 🌟 È la Vigilia. Oggi si aspetta: la sorpresa più grande è per domani.",
+      "reminder": "Buongiorno! 🌟 È la Vigilia. Oggi si aspetta: la sorpresa più grande è per domani.",
       "content": { "paragraphs": [
         "Oggi è il giorno dell’attesa, quello in cui tutto è pronto e manca solo un po’ di pazienza.",
         "Ti chiedo solo una cosa: stasera, prima di dormire, spegni le luci della stanza, lascia accesa soltanto quella dell’albero (o di una candela) e pensa a una cosa bella di quest’anno.",
