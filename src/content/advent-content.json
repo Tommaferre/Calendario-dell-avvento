@@ -5,7 +5,7 @@
       "Venticinque giorni, venticinque piccole sorprese.",
       "Questo calendario è una collezione di momenti speciali, per una persona speciale, uno per ogni giorno di dicembre."
     ],
-    "howTo": "Tocca la casella del giorno per aprirla. Quelle col lucchetto si apriranno al loro turno; quelle già aperte restano sempre qui, a tua disposizione (alcune potrebbero tornarti utili in futuro XD).",
+    "howTo": "Tocca la casella del giorno per aprirla. Quelle col lucchetto si apriranno al loro turno; quelle già aperte restano sempre qui, a tua disposizione (alcune potrebbero tornarti utili in futuro 🌶️).",
     "finalTitle": "Il 25 dicembre"
   },
   "days": [
@@ -27,20 +27,22 @@
       "illustration": "assets/advent/day-02.svg",
       "reminder": "Buongiorno ✨ Oggi c’è una stella che ti aspetta, da mettere in tasca per la giornata.",
       "content": { "paragraphs": [
-        "Oggi niente di complicato: solo un pensiero. Ci sono persone che rendono più luminosa anche la strada più fredda e buia, e tu sei una di quelle.",
-        "Se la giornata oggi pesa un po’, mettiti questa stella in tasca. Se invece è leggera, tienila lo stesso: porta fortuna."
+        "Non tutte le sorprese devono essere grandi.",
+        "Alcune sono semplicemente persone che entrano nella tua vita e poi, senza chiedere il permesso, ne pagando l'affitto, ci rimangono.",
+        "Tu effettivamente hai fatto un po' così, ho sperato un anno e più, finchè non hai deciso che era il caso di restare e che ero il miglior partito che potessi trovare.",
+        "Anche tu non sei così male dai 😉"
       ] }
     },
     {
       "day": 3, "date": "2026-12-03", "type": "photo",
-      "title": "Una cartolina per te",
-      "preview": "Un posto immaginario, caldo e silenzioso.",
+      "title": "Un ricordo per te!",
+      "preview": "Tutti addobbati, come un albero di Natale 😆",
       "illustration": "assets/advent/day-03.svg",
-      "reminder": "Buongiorno 💌 Oggi è arrivata una cartolina. Vieni a vedere da dove.",
+      "reminder": "Buongiorno! 💌 Oggi è arrivata una foto ricordo!",
       "content": {
-        "image": "assets/photos/cartolina-inverno.svg",
-        "alt": "Illustrazione di una casetta con la finestra illuminata, sotto la neve e la luna",
-        "caption": "Una cartolina dal nostro dicembre: una casetta con la luce accesa, la neve fuori e due tazze sul tavolo. Il posto in cui ogni tanto vorrei fermare il tempo."
+        "image": "assets/photos/day-03.png",
+        "alt": "Illustrazione di un albero di natale... Ah no, siamo noi!",
+        "caption": "Un ricordo dal nostro dicembre del 2024: tutti addobbati, come un albero di Natale! 😆"
       }
     },
     {
@@ -264,13 +266,13 @@
     },
     {
       "day": 16, "date": "2026-12-16", "type": "message",
-      "title": "Un piccolo promemoria",
-      "preview": "Da leggere ogni volta che serve.",
+      "title": "Quattro anni insieme ❤️",
+      "preview": "Pronti a salvare il mondo oggi!",
       "illustration": "assets/advent/day-16.svg",
-      "reminder": "Buongiorno 🧦 Oggi la casella contiene un promemoria. Tienilo a portata di mano.",
+      "reminder": "Buongiorno! Oggi sono quattro anni insieme! E stasera andiamo a sfidare il destino!!",
       "content": { "paragraphs": [
-        "Promemoria del giorno: sei più brava di quanto pensi, più forte di quanto ti senta e più amata di quanto immagini.",
-        "Se un giorno dovessi dimenticarlo, torna qui e riaprila. Questa casella non scade mai."
+        "Buongiorno amore ❤️ Oggi sono quattro anni insieme, e non smetto di ringraziare il destino per averti incontrata.",
+        "Quattro anni di risate, di avventure, di momenti condivisi e un sacco di film visti insieme. E stasera, andiamo a vedere se il destino ucciderà tutti gli avengers..."
       ] }
     },
     {
