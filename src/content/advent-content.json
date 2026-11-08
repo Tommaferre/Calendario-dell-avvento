@@ -273,7 +273,7 @@
       "reminder": "Buongiorno! ⛄ Nuovo indovinello in arrivo. Questo è un po’ più furbo del primo.",
       "content": {
         "kind": "riddle",
-        "intro": "Un indovinello un po’ più furbo. Scrivi la risposta o chiedi l’indizio.",
+        "intro": "Un indovinello un po’ più furbo. Scrivi la risposta o chiedi l’indizio .",
         "riddle": "Ha un cappello ma non ha una testa vera, ha un naso ma non sente alcun profumo, e quando arriva il sole saluta e sparisce. Chi è?",
         "answers": ["pupazzo di neve", "omino di neve", "uomo di neve", "pupazzo"],
         "hint": "Lo costruisci con le mani e una carota fa da naso.",
