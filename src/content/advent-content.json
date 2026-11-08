@@ -125,30 +125,30 @@
     },
     {
       "day": 7, "date": "2026-12-07", "type": "game",
-      "title": "L’indovinello della neve",
-      "preview": "Un enigma bianco e silenzioso.",
+      "title": "Indovinello: la stanza impossibile",
+      "preview": "Mettiamo alla prova il tuo spirito investigativo.",
       "illustration": "assets/advent/day-07.svg",
-      "reminder": "Buongiorno! ❄️ Oggi ti aspetta un indovinello. Scommetto che ci arrivi subito.",
+      "reminder": "Buongiorno detective! 🕵️ Oggi c'è un piccolo caso da risolvere. Attenzione ai dettagli!",
       "content": {
         "kind": "riddle",
-        "intro": "Leggi con calma e scrivi la risposta. Se ti blocchi, c’è un indizio.",
-        "riddle": "Scende dal cielo senza fare rumore, d’inverno veste di bianco ogni cosa e, se provi a tenerla in mano, ti scivola via. Che cos’è?",
-        "answers": ["neve", "fiocchi di neve", "fiocco di neve"],
-        "hint": "Quando arriva, tutto intorno si fa silenzioso.",
-        "revealText": "La risposta è: la neve.",
-        "successMessage": "Esatto, la neve! Anche questa volta non ti sfugge nulla.",
-        "wrongMessage": "Non è questa… ma ci sei vicina. Riprova, o chiedi l’indizio."
+        "intro": "Non fidarti della prima risposta che ti viene in mente.",
+        "riddle": "Entro in una stanza completamente buia. Nella stanza ci sono una candela, una lampada a olio e un camino. Ho un solo fiammifero. Che cosa accendo per prima?",
+        "answers": ["fiammifero", "il fiammifero", "il fiammifero acceso"],
+        "hint": "Prima di accendere qualsiasi cosa, devi necessariamente fare un'altra cosa.",
+        "revealText": "La risposta è: il fiammifero!",
+        "successMessage": "Bravissima! Mannaggia, hai visto il trabocchetto prima ancora che potesse fregarti.",
+        "wrongMessage": "Attenzione! Stai saltando un passaggio fondamentale. Pensa a cosa serve per accendere tutto il resto."
       }
     },
     {
       "day": 8, "date": "2026-12-08", "type": "voucher",
-      "title": "Buono: serata sul divano",
+      "title": "Buono: serata chill",
       "preview": "Coperta, film e nessuna fretta.",
       "illustration": "assets/advent/day-08.svg",
-      "reminder": "Buongiorno! 🎬 Nella casella di oggi c’è un buono per una serata tranquilla.",
+      "reminder": "Buongiorno! 🎬 Nella casella di oggi c’è un buono per...?",
       "content": {
         "title": "Buono per una serata film e coperta",
-        "description": "Una serata sul divano: il film lo scegli tu, la coperta è abbondante, gli snack non mancano e i telefoni restano lontani.",
+        "description": "Una serata sul divano o nel lettone: il film lo scegli tu, la coperta è calda, gli snack e il vino presenti e i telefoni restano lontani!",
         "redeem": "Scegli una sera che ti va bene, avvisami e premi «Segna come usato». Al resto penso io.",
         "validity": "Valido tutto l’inverno."
       }
@@ -160,8 +160,9 @@
       "illustration": "assets/advent/day-09.svg",
       "reminder": "Buongiorno! 🧤 Oggi c’è qualcosa di caldo nella casella. Copriti bene!",
       "content": { "paragraphs": [
-        "Se oggi fuori fa freddo, ricordati che il caldo non viene solo dai cappotti. Viene anche da chi ti pensa, da un messaggio inatteso, da una voce che ti fa ridere al momento giusto.",
-        "Ecco: questo è il mio guanto in più, da infilare nella tasca di sinistra. Tienilo per i momenti in cui serve."
+        "Se oggi fuori fa freddo, ricordati che il caldo non viene solo dai cappotti.",
+        " Viene anche da un fidanzato pirla, che ti pensa, cerca di farti ridere e in ogni momento sai che ti sostiene sempre, qualunque cosa tu faccia.",
+        "Ecco: questo è il mio guanto in più, da infilare nella tasca, oggi e per tutto l'inverno. Tienilo per i momenti in cui serve."
       ] }
     },
     {
@@ -169,10 +170,10 @@
       "title": "Il memory delle decorazioni",
       "preview": "Trova tutte le coppie nascoste.",
       "illustration": "assets/advent/day-10.svg",
-      "reminder": "Buongiorno! 🎄 Oggi c’è un memory natalizio. Quanti tentativi ti serviranno?",
+      "reminder": "Buongiorno! 🎄 Oggi giochinoo. Quanti tentativi ti serviranno?",
       "content": {
         "kind": "memory",
-        "intro": "Gira due carte alla volta e trova le coppie uguali. Meno tentativi fai, meglio è: ma si può sempre rigiocare.",
+        "intro": "Gira due carte alla volta e trova le coppie uguali (pensa te, esattamente come funziona un memory, novità incredibile!). Meno tentativi fai, meglio è: ma si può sempre rigiocare.",
         "pairs": [
           { "id": "star", "label": "Stella", "image": "assets/decor/star.svg" },
           { "id": "bell", "label": "Campanella", "image": "assets/decor/bell.svg" },
@@ -181,7 +182,7 @@
           { "id": "gift", "label": "Pacchetto regalo", "image": "assets/decor/gift.svg" },
           { "id": "heart", "label": "Cuore", "image": "assets/decor/heart.svg" }
         ],
-        "successMessage": "Tutte le coppie trovate! Un po’ come noi: le cose belle si riconoscono al volo."
+        "successMessage": "Tutte le coppie trovate! Un po’ come noi: ci starebbe proprio inserire un messaggio sdolcinato, ma non oggi, mi sono un po' stufato di tutte ste robe smielate, oggi no, oggi ti becchi una bella freddura: una renna si è slogata una caviglia... E' slittata. 😬"
       }
     },
     {
@@ -201,7 +202,7 @@
       "title": "Quiz: tradizioni italiane",
       "preview": "Presepi, dolci e feste di dicembre.",
       "illustration": "assets/advent/day-12.svg",
-      "reminder": "Buongiorno! 🥧 Oggi un quiz sulle tradizioni italiane. Si parla anche di dolci!",
+      "reminder": "Buongiorno! 🥧 Oggi un quiz sulle tradizioni italiane. Più facile rispetto all'altro, promesso!",
       "content": {
         "intro": "Un secondo quiz, un po’ più goloso. Cinque domande sulle tradizioni italiane di dicembre.",
         "questions": [
@@ -218,7 +219,7 @@
             "correctFeedback": "Santa Lucia, la santa della luce. Perfetta per questo periodo.",
             "wrongFeedback": "È Santa Lucia, la santa della luce: in alcune zone porta i doni ai bambini." },
           { "question": "Quale gioco si fa spesso a Natale estraendo i numeri da un sacchetto?",
-            "options": ["Briscola", "Tombola", "Dama", "Scala quaranta"], "correctIndex": 1,
+            "options": ["Briscola", "Tombola", "Roulette", "Scala quaranta"], "correctIndex": 1,
             "correctFeedback": "La tombola, regina delle feste in famiglia.",
             "wrongFeedback": "È la tombola: si estraggono i numeri e si sperano ambo, terno e cinquina." },
           { "question": "A quale città lombarda è legato il torrone, dolce tipico del periodo natalizio?",
@@ -241,27 +242,27 @@
       "reminder": "Buongiorno! 🏮 Oggi nella casella c’è un buono da usare quando verrà buio presto.",
       "content": {
         "title": "Buono per una passeggiata sotto le luci",
-        "description": "Una passeggiata serale tra luminarie e vetrine, con sciarpa, mani in tasca e tutto il tempo che serve. Fermata obbligatoria per qualcosa di caldo da bere.",
-        "redeem": "Scegli la sera, io porto la compagnia. Poi premi «Segna come usato».",
+        "description": "Una passeggiata serale tra luminarie e vetrine, con sciarpa, due mani in tasca e due che si stringono, prendendosi tutto il tempo che serve. Fermata obbligatoria per qualcosa di caldo da bere, o che ci scladi grazie all'alcol, vedi tu. 😉",
+        "redeem": "Scegli la serata perfetta, e il luogo, io mi occupo del passaggio! Poi premi «Segna come usato».",
         "validity": "Valido fino a quando restano accese le luci."
       }
     },
     {
       "day": 14, "date": "2026-12-14", "type": "letter",
-      "title": "A metà strada",
-      "preview": "Una lettera, qualche giorno dopo l’inizio.",
+      "title": "Quasi arrivati",
+      "preview": "Una lettera, qualche giorno prima dell'arrivo!",
       "illustration": "assets/advent/day-14.svg",
       "reminder": "Buongiorno! 💌 Oggi c’è una lettera nella casella. Trova cinque minuti tranquilli.",
       "content": {
-        "greeting": "Cara,",
+        "greeting": "Buongiorno amore,",
         "paragraphs": [
-          "siamo a metà del cammino verso Natale e mi sembra il momento giusto per fermarmi un attimo e scriverti.",
-          "Dicembre ha questa magia: rallenta tutto, ci fa guardare le cose con più attenzione. E mi accorgo che, tra le tante luci di questo periodo, quella che cerco ogni volta sei tu.",
-          "Grazie per i momenti in cui ridiamo, per quelli in cui ci capiamo senza parlare e anche per quelli in cui ci vuole un po’ di pazienza. Sono tutti pezzi di una storia che mi piace.",
+          "Mancano una decina di giorni a Natale e mi sembra il momento giusto per fermarmi un attimo e scriverti.",
+          "Dicembre ha questa magia: rallenta tutto, ci fa guardare le cose con più attenzione. Mi accorgo che, tra le tante luci di questo periodo, quella che cerco ogni volta sei tu.",
+          "Grazie per i momenti in cui ridiamo, per quelli in cui ci capiamo senza parlare e anche per quelli in cui ci vuole un po’ di pazienza (ovviamente mia pazienza). Sono tutti pezzi di una storia che mi piace e che mi piace portare avanti ogni giorno.",
           "Da qui in avanti le sorprese diventano più speciali. Non ti dico altro."
         ],
         "closing": "Con tutto l’affetto che ho,",
-        "signature": "Il tuo ragazzo"
+        "signature": "Il cappello 🎩"
       }
     },
     {
