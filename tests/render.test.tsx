@@ -126,7 +126,7 @@ describe('renderer', () => {
     await userEvent.click(screen.getByRole('button', { name: /indizio/i }));
     expect(screen.getByText(/Indizio:/)).toBeInTheDocument();
     await userEvent.clear(screen.getByLabelText('La tua risposta'));
-    await userEvent.type(screen.getByLabelText('La tua risposta'), 'La neve');
+    await userEvent.type(screen.getByLabelText('La tua risposta'), c.answers[0]!);
     await userEvent.click(screen.getByRole('button', { name: 'Rispondi' }));
     expect(onSolved).toHaveBeenCalledWith(2);
     await userEvent.click(screen.getByRole('button', { name: 'Riprova' }));
