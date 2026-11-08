@@ -327,7 +327,7 @@
           { "id": "star", "label": "Stella", "image": "assets/decor/star.svg" },
           { "id": "bell", "label": "Campanella", "image": "assets/decor/bell.svg" }
         ],
-        "successMessage": "Missione compiuta! Il camino è acceso e tutte le coppie sono al loro posto."
+        "successMessage": "Missione compiuta!   Il camino è acceso e tutte le coppie sono al loro posto."
       }
     },
     {
