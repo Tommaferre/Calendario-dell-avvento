@@ -267,25 +267,25 @@
     },
     {
       "day": 15, "date": "2026-12-15", "type": "game",
-      "title": "L’indovinello dell’omino",
-      "preview": "Ha il cappello ma non ha la testa.",
+      "title": "La piccola detective",
+      "preview": "Più ne togli, più diventa grande.",
       "illustration": "assets/advent/day-15.svg",
-      "reminder": "Buongiorno! ⛄ Nuovo indovinello in arrivo. Questo è un po’ più furbo del primo.",
+      "reminder": "Buongiorno detective! 🕵️ Oggi non sarà così semplice!",
       "content": {
         "kind": "riddle",
-        "intro": "Un indovinello un po’ più furbo. Scrivi la risposta o chiedi l’indizio .",
-        "riddle": "Ha un cappello ma non ha una testa vera, ha un naso ma non sente alcun profumo, e quando arriva il sole saluta e sparisce. Chi è?",
-        "answers": ["pupazzo di neve", "omino di neve", "uomo di neve", "pupazzo"],
-        "hint": "Lo costruisci con le mani e una carota fa da naso.",
-        "revealText": "La risposta è: il pupazzo di neve.",
-        "successMessage": "Il pupazzo di neve! Sapevo che non ti avrebbe fregata.",
-        "wrongMessage": "Non proprio, ma l’idea è giusta. Riprova!"
+        "intro": "Attenzione: questo indovinello sembra impossibile, ma la soluzione è semplicissima.",
+        "riddle": "Più cose mi togli, più divento grande. Non sono una persona e non sono un oggetto. Cosa sono?",
+        "answers": ["buco", "un buco", "il buco", "voragine"],
+        "hint": "Pensa a cosa succede quando scavi nella sabbia.",
+        "revealText": "La risposta è: un buco!",
+        "successMessage": "Ma quanto sei intelligente?! Sherlock Holmes ti fa un baffo! 🕵️",
+        "wrongMessage": "Ritenta! Devi pensare a qualcosa che cresce proprio mentre lo svuoti."
       }
     },
     {
       "day": 16, "date": "2026-12-16", "type": "message",
       "title": "Quattro anni insieme ❤️",
-      "preview": "Pronti a salvare il mondo oggi!",
+      "preview": "Oggi pronti a salvare il mondo!",
       "illustration": "assets/advent/day-16.svg",
       "reminder": "Buongiorno! Oggi sono quattro anni insieme! E stasera andiamo a sfidare il destino!!",
       "content": { "paragraphs": [
@@ -300,12 +300,12 @@
       "title": "Buono: cena fatta da me",
       "preview": "Un menù deciso da te, cucinato da me.",
       "illustration": "assets/advent/day-17.svg",
-      "reminder": "Buongiorno! 🍽️ Nella casella di oggi c’è un buono per una cena speciale. Fai pure la difficile!",
+      "reminder": "Buongiorno! 🍽️ Nella casella di oggi c’è un buono per una cena speciale!",
       "content": {
         "title": "Buono per una cena cucinata da me",
         "description": "Una cena completa preparata con le mie mani, dall’antipasto al dolce. Tu scegli il menù, io mi occupo di tutto, compresi i piatti da lavare.",
-        "redeem": "Dimmi cosa ti va e quando, poi premi «Segna come usato». Prometto di impegnarmi.",
-        "validity": "Valido fino a fine gennaio."
+        "redeem": "Dimmi cosa ti va e quando, poi premi «Segna come usato». Se preferisci una cena a sorpresa, lasciami carta bianca e vedremo quanto riuscirò a stupirti!",
+        "validity": "Valido fino alla fine del freddo! 🕒"
       }
     },
     {
@@ -313,7 +313,7 @@
       "title": "Il memory del camino",
       "preview": "Otto coppie: questa volta è più difficile.",
       "illustration": "assets/advent/day-18.svg",
-      "reminder": "Buongiorno! 🕯️ Oggi un memory più difficile del primo. Otto coppie da trovare.",
+      "reminder": "Buongiorno! 🕯️ Oggi un altro memory, ma più difficile del primo. Otto coppie aspettano di essere trovate.",
       "content": {
         "kind": "memory",
         "intro": "Otto coppie da trovare, stavolta. Concentrati e prenditi il tuo tempo.",
@@ -333,13 +333,13 @@
     {
       "day": 19, "date": "2026-12-19", "type": "photo",
       "title": "Un pomeriggio d’inverno",
-      "preview": "Come me lo immagino, insieme.",
+      "preview": "Freddino?",
       "illustration": "assets/advent/day-19.svg",
-      "reminder": "Buongiorno! 🔥 Oggi la casella mostra un pomeriggio che mi piacerebbe vivere con te.",
+      "reminder": "Buongiorno! 🔥 Oggi la casella mostra un pomeriggio e un pensiero.",
       "content": {
-        "image": "assets/photos/pomeriggio-invernale.svg",
-        "alt": "Illustrazione di un camino acceso con due poltrone e due tazze fumanti",
-        "caption": "Così mi immagino un pomeriggio d’inverno insieme: un camino, due tazze, nessuna fretta e nessun programma."
+        "image": "assets/photos/day-19.jpeg",
+        "alt": "Venezia, 23/11/2025",
+        "caption": "Hai ragione, non era propriamente durante il periodo strettamente natalizio, ma questo pomeriggio d’inverno a Venezia mi è rimasto molto impresso, anche perchè faceva comunque parecchio freddo. Mi piacerebbe proprio riviverlo insieme, magari con qualche buon bacaro che ci scaldi per benino... Al momento della creazione di questo calendario ancora non siamo andati a Cracovia, ma sono sicuro che abbiamo passato dei bei pomeriggi anche lì, sicuramente al freddo. Sarebbe proprio una bella tradizione se riuscissimo ogni anno a ricavarci 3/4 giorni per noi due per dare il benvenuto all'inverno e al Natale!"
       }
     },
     {
@@ -356,26 +356,26 @@
             "correctFeedback": "Giusto: è una tradizione che ci è arrivata dalla Germania.",
             "wrongFeedback": "È la Germania, da cui l’abitudine di addobbare l’albero si è diffusa nel resto del mondo." },
           { "question": "In quale regione del Nord Europa la leggenda colloca la casa di Babbo Natale?",
-            "options": ["Lapponia", "Sicilia", "Patagonia", "Sahara"], "correctIndex": 0,
-            "correctFeedback": "In Lapponia, tra renne e foreste innevate.",
-            "wrongFeedback": "È la Lapponia, tra renne e foreste innevate." },
+            "options": ["Lapponia", "Finale Ligure (palese)", "Patagonia", "Steppa russa"], "correctIndex": 1,
+            "correctFeedback": "Brava, ovviamente Finale Ligure dove si dice che il Babbo Natale abiti, chiaramente è un uomo di mare a cui piace il caldo.",
+            "wrongFeedback": "Eheheh c'era scritto palese!" },
           { "question": "In Spagna, in che giorno i bambini ricevono tradizionalmente i regali dei Re Magi?",
-            "options": ["Epifania (6 gennaio)", "Ferragosto", "Pasqua", "Carnevale"], "correctIndex": 0,
+            "options": ["Epifania (6 gennaio)", "Natale", "Santo Stefano", "Carnevale"], "correctIndex": 0,
             "correctFeedback": "L’Epifania: un po’ come da noi con la Befana.",
             "wrongFeedback": "È l’Epifania, il 6 gennaio, quando arrivano i Re Magi." },
-          { "question": "Che stagione è a Natale in Australia?",
+          { "question": "Che stagione è a Natale in Australia? Se hai parlato con Bacco è parecchio facile questa dai!",
             "options": ["Inverno", "Autunno", "Estate", "Primavera"], "correctIndex": 2,
             "correctFeedback": "Estate! Natale in costume da bagno è possibile.",
             "wrongFeedback": "In Australia è estate: si può festeggiare Natale anche in spiaggia." },
           { "question": "Come si chiamano i tradizionali mercatini di Natale tedeschi?",
             "options": ["Oktoberfest", "Weihnachtsmarkt", "Karneval", "Kirschblüte"], "correctIndex": 1,
-            "correctFeedback": "Weihnachtsmarkt, con vin brulé e dolci profumati.",
-            "wrongFeedback": "Si chiamano Weihnachtsmarkt, con vin brulé, dolci e tante luci." }
+            "correctFeedback": "Weihnachtsmarkt, con vin brulé e dolci profumati, anche se preferisco l'oktoberfest.",
+            "wrongFeedback": "Si chiamano Weihnachtsmarkt, con vin brulé, dolci e tante luci. Peccato, anche l'oktoberfest non è male." }
         ],
         "results": [
-          { "minScore": 0, "title": "Viaggiatrice in partenza", "text": "Il viaggio è appena iniziato: c’è tutto il mondo da scoprire, anche a Natale." },
+          { "minScore": 0, "title": "Viaggiatrice in partenza", "text": "Il viaggio è appena iniziato: c’è tutto il mondo da scoprire, e a Natale è pure più bello." },
           { "minScore": 3, "title": "Esploratrice", "text": "Ottimo giro! Conosci già parecchie usanze di altri Paesi." },
-          { "minScore": 5, "title": "Giramondo di Natale", "text": "Punteggio pieno! Ti meriti un viaggio, e magari lo progettiamo davvero." }
+          { "minScore": 5, "title": "Giramondo di Natale", "text": "Punteggio pieno! Una donna di mondo perfetta." }
         ]
       }
     },
@@ -384,15 +384,15 @@
       "title": "L’indovinello della notte più lunga",
       "preview": "Oggi il sole si ferma per un attimo.",
       "illustration": "assets/advent/day-21.svg",
-      "reminder": "Buongiorno! 🌙 Oggi è il giorno più corto dell’anno. L’indovinello è a tema.",
+      "reminder": "Buongiorno! 🌙 Oggi è il giorno più corto dell’anno!",
       "content": {
         "kind": "riddle",
-        "intro": "Il 21 dicembre è speciale: l’indovinello di oggi parla proprio di questo.",
-        "riddle": "Quest’anno arriva oggi: è il giorno più corto e la notte più lunga, e da domani la luce comincerà lentamente a tornare. Come si chiama questo momento?",
+        "intro": "Il 21 dicembre una data speciale!",
+        "riddle": "Quest’anno arriva oggi: è il giorno più corto e la notte più lunga, e da domani la luce comincerà lentamente a tornare. Ti ricordi come si chiama questo momento? Ma soprattutto, perchè Percy Jackson ha sempre uno di questi giorni come scadenza per le sue imprese?",
         "answers": ["solstizio", "solstizio d’inverno", "solstizio invernale", "solstizio di dicembre"],
         "hint": "Il nome comincia con «sol» e ha a che fare con il Sole.",
         "revealText": "La risposta è: il solstizio d’inverno.",
-        "successMessage": "Il solstizio d’inverno! Da qui in poi le giornate si riallungano, un po’ alla volta.",
+        "successMessage": "Il solstizio d’inverno! Bravissima, e per quanto riguarda Percy Jackson, i solstizi sono momenti in cui il mondo è più vulnerabile, le sue imprese hanno molto più valore se accadono in quei giorni.",
         "wrongMessage": "Non è questa. Riprova: ha a che fare con il Sole che «si ferma»."
       }
     },
@@ -401,12 +401,12 @@
       "title": "Buono Jolly",
       "preview": "Una giornata in cui decidi tu.",
       "illustration": "assets/advent/day-22.svg",
-      "reminder": "Buongiorno! 🎟️ Oggi nella casella c’è un Jolly. Pensa bene come usarlo.",
+      "reminder": "Buongiorno! 🎟️ Oggi nella casella c’è...?",
       "content": {
         "title": "Buono Jolly: oggi decidi tu",
-        "description": "Una giornata o una serata in cui decidi tutto tu: cosa fare, dove andare, cosa mangiare e quando tornare a casa. Io mi adeguo con il sorriso.",
+        "description": "Una giornata intera o una serata in cui decidi tutto tu: cosa fare (😉), dove andare, cosa mangiare e quando tornare a casa.",
         "redeem": "Usalo quando vuoi, anche all’ultimo momento, e poi premi «Segna come usato».",
-        "validity": "Un solo utilizzo, valido tutto l’anno nuovo."
+        "validity": "Un solo utilizzo (forse, vediamo che cosa scegli, potrei abbonarti qualche utilizzo), valido tutto l’anno nuovo."
       }
     },
     {
@@ -414,16 +414,16 @@
       "title": "Quasi arrivati",
       "preview": "Una lettera sulla soglia del Natale.",
       "illustration": "assets/advent/day-23.svg",
-      "reminder": "Buongiorno! 🦌 Il Natale è quasi qui. Oggi una lettera ti aspetta nella casella.",
+      "reminder": "Buongiorno! 🦌 Il Natale è quasi qui!",
       "content": {
-        "greeting": "Cara,",
+        "greeting": "Cara Giulia,",
         "paragraphs": [
-          "mancano pochissimi giorni e la casa, la città, perfino l’aria sembrano diverse. C’è quella attesa buona, che somiglia a un’emozione trattenuta.",
-          "In queste settimane ho pensato a come raccontarti quanto è importante per me averti vicina. Alla fine ho capito che non servono grandi discorsi: basta essere presenti, ascoltarsi, tornare sempre l’uno dall’altra.",
-          "Se c’è un desiderio che ho per questo Natale, è semplice: avere tempo con te. Tutto il resto, è già un regalo in più."
+          "mancano pochissimi giorni a Natale è senti tutto attorno a te che c'è qualcosa di frizzante e magico. C’è quella attesa buona, che somiglia a un’emozione trattenuta.",
+          "In queste settimane ho pensato a come raccontarti quanto è importante per me averti vicina, durante quest'anno soprattutto, abbiamo affrontato numerosi cambiamenti e responsabilità, ed averti accanto è stato di grande conforto.",
+          "Se c’è un desiderio che ho per questo Natale, è semplice: avere tempo con te, ricavarne il più possibile per passarlo insieme. Tutto il resto non mi serve, ho già tutto quello che desidero al mio fianco 🧡."
         ],
         "closing": "A domani, e a dopodomani, e a tutti i giorni che verranno,",
-        "signature": "Il tuo ragazzo"
+        "signature": "Il cappello 🎩"
       }
     },
     {
@@ -431,11 +431,12 @@
       "title": "La notte prima",
       "preview": "Ancora una notte, poi si apre l’ultima casella.",
       "illustration": "assets/advent/day-24.svg",
-      "reminder": "Buongiorno! 🌟 È la Vigilia. Oggi si aspetta: la sorpresa più grande è per domani.",
+      "reminder": "Buongiorno! 🌟 È la Vigilia e io apro i regalii (da leggere tipo rado e jack).",
       "content": { "paragraphs": [
-        "Oggi è il giorno dell’attesa, quello in cui tutto è pronto e manca solo un po’ di pazienza.",
-        "Ti chiedo solo una cosa: stasera, prima di dormire, spegni le luci della stanza, lascia accesa soltanto quella dell’albero (o di una candela) e pensa a una cosa bella di quest’anno.",
-        "Domani si apre l’ultima casella, quella che contiene tutto il resto. Buona Vigilia."
+        "Oggi per te sarà il giorno dell’attesa, quello in cui tutto è pronto e la pazienza sta per essere ricompensata.",
+        "Stasera, prima di dormire, prova a spegnere tutte le luci della stanza, lasciane accesa soltanto una piccolina, calda, e pensa a una cosa bella di quest’anno, a un momento che ti ha fatto sorridere o a una cosa che ti ha reso felice.",
+        "Durante il prossimo anno, vorrei tu ripensassi a quel momento, quando ne avrai bisogno, e ti aiuterà a superare ogni difficoltà.",
+        "Domani è il giorno che probabilmente aspetti più di tutto l'intero anno, dormi bene che sarà un gran giorno. Buona Vigilia amore!"
       ] }
     },
     {
@@ -443,20 +444,20 @@
       "title": "Buon Natale",
       "preview": "L’ultima casella: una lettera e un regalo.",
       "illustration": "assets/advent/day-25.svg",
-      "reminder": "Buon Natale! 🎄✨ L’ultima casella è aperta: una lettera e un regalo ti aspettano.",
+      "reminder": "Buon Natale! 🎄✨ L’ultima casella è aperta!",
       "content": {
-        "greeting": "Amore mio,",
+        "greeting": "Buongiorno amore, buon Natale! 🎄✨",
         "paragraphs": [
-          "eccoci arrivati in fondo a questo calendario. Venticinque caselle, venticinque piccoli modi per dirti una cosa sola: ci tengo a te, tantissimo.",
-          "Non so scrivere tutto quello che sento senza sembrare un biglietto di auguri, ma ci provo lo stesso. Grazie per la tua dolcezza, per la tua testardaggine, per la tua risata e per il modo in cui rendi migliore ogni giorno normale. Con te anche il freddo di dicembre sembra più gentile.",
-          "Il mio augurio per questo Natale è che tu possa sentirti sempre al sicuro, amata e libera di essere esattamente come sei. Io ci sono, oggi e negli anni che verranno.",
-          "Un ultimo pensiero, il più importante: non ho bisogno che dicembre finisca per continuare a farti sorprese. Questo calendario si chiude, ma le sorprese no."
+          "eccoci arrivati in fondo a questo calendario. Venticinque caselle, venticinque piccoli modi per dirti che sono felice di passare un altro natale in tua compagnia.",
+          "Non so scrivere tutto quello che sento senza sembrare un biglietto di auguri, ma ci provo lo stesso. Grazie per la tua dolcezza, per la tua testardaggine, per la tua risata e per il modo in cui rendi migliore ogni giorno normale semplicemente con uno sguardo. Con te anche il freddo di dicembre sembra più gentile.",
+          "Il mio augurio per questo Natale è che tu possa sentirti sempre al sicuro, amata e libera di essere esattamente come sei. Io ci sono, oggi, domani e nei giorni che verranno, pure se farai delle puzzette.",
+          "Un ultimo pensiero, il più importante: non ho bisogno che dicembre finisca per continuare a farti sorprese. Questo calendario si chiude, ma le sorprese no, ci vediamo nella prossima puntata!"
         ],
-        "closing": "Buon Natale, con tutto il cuore,",
-        "signature": "Il tuo ragazzo",
+        "closing": "Buon Natale amore, con tutto il cuore,",
+        "signature": "Il cappello 🎩",
         "gift": {
           "title": "Il regalo che non si scarta",
-          "description": "Dodici appuntamenti, uno al mese, per tutto il prossimo anno: ogni mese ne scegli uno tu e uno io, e li viviamo insieme. Il primo ti aspetta a gennaio."
+          "description": "Ventiquattro appuntamenti, due al mese, per tutto il prossimo anno: ogni mese ne scegli uno tu e uno io, e li viviamo insieme, dovremo impegnarci a non ripeterci mai, servirà fantasia e impegno, ma faremo un sacco di cose quest'anno!"
         }
       }
     }
