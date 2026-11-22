@@ -14,10 +14,11 @@
       "title": "Benvenuta nel nostro dicembre! 🎄",
       "preview": "Comincia il nostro dicembre.",
       "illustration": "assets/advent/day-01.svg",
-      "reminder": "Buongiorno! 🎄 Si accende il primo giorno del nostro dicembre. La prima casella ti aspetta.",
+      "reminder": "Buongiorno! 🎄 Ecco il primo giorno del nostro dicembre! La prima casella ti aspetta!",
       "content": { "paragraphs": [
-        "Buon primo dicembre! Da oggi, per venticinque giorni, troverai qui una piccola sorpresa: a volte un pensiero, a volte un gioco, a volte una promessa da mantenere insieme.",
-        "Non c’è nessuna fretta. Ogni casella aspetta il suo giorno, e quelle già aperte restano qui, al caldo, per quando vorrai rileggerle."
+        "Buon primo dicembre! Da oggi, per venticinque giorni, troverai qui una piccola sorpresa: a volte un pensiero, a volte un gioco, a volte altro, basta spoiler!",
+        "Ogni casella aspetta il suo giorno, e quelle già aperte restano qui, al caldo, per quando vorrai rileggerle o per quando ti serviranno nuovamente.",
+        "Spero che questo calendario ti faccia sorridere, e che ti accompagni in un dicembre pieno di cose belle. ❤️"
         ] }
     },
     {
@@ -29,8 +30,10 @@
       "content": { "paragraphs": [
         "Oggi parliamo di un contratto mai firmato.",
         "Quello con cui sei entrata nella mia vita, nel mio cuore e nella mia testa, e, senza nessun preavviso, né alcun segno di pagarmi un affitto, ci sei rimasta.",
-        "Ti ho aspettata un anno e più, finché non hai deciso che valeva la pena restare, e che ero il miglior partito che potessi trovare, ormai son quasi quattro anni che stai qua, ogni tanto con qualche lamentela, ma sempre con la voglia di restare.",
-        "P.S. nemmeno tu sei così male come partito dai 😉"
+        "Ti ho aspettata un anno e più, finché non hai deciso che valeva la pena restare, e che ero il miglior partito che potessi trovare.",
+        "Ormai son quasi quattro anni che stai qua, qualche lamentela c'è stata ogni tanto, ma non abbiamo avuto problemi a superare tutto insieme.",
+        "Oggi quindi rinnovo questo contratto a tempo indeterminato, aumento il tuo affitto pari a un centinaio di bacini al mese, ma in compenso offro numerosi benefit.",
+        "Grazie per essere la mia affittuaria fissa, e per aver preso casa nel mio cuore. ❤️"
       ] }
     },
     {
@@ -53,7 +56,7 @@
       "reminder": "Buongiorno! ☕ Nella casella di oggi c’è qualcosa da riscattare! ",
       "content": {
         "title": "Buono per una cioccolata calda",
-        "description": "Valido per una cioccolata calda fatta come si deve: densa, caldissima, e sotto la copertina sul divano a guardare un bel film, oppure fuori per prendersi una pausa dal freddo.",
+        "description": "Valido per una cioccolata calda fatta come si deve: densa, caldissima, sotto la copertina, sul divano, a guardare un bel film, oppure fuori per prendersi una pausa dal freddo.",
         "redeem": "Quando vuoi usarlo, fammelo sapere e poi premi «Segna come usato». Scegli tu il giorno e il posto: a casa o fuori.",
         "validity": "Valido fino alla fine del freddo! 🕒"
       }
@@ -85,7 +88,7 @@
             "wrongFeedback": "Nooo! Sono nove: le otto renne tradizionali più Rudolph!" },
           { "question": "In quale Paese nacque la tradizione del calendario dell'Avvento nella sua forma moderna, con finestrelle da aprire ogni giorno?",
             "options": ["Svezia", "Germania", "Danimarca", "Regno Unito"], "correctIndex": 1,
-            "correctFeedback": "Esatto! Il calendario dell'Avvento moderno nacque in Germania, ma scusa quanta roba natalizia hanno fatto sti tedeschi?",
+            "correctFeedback": "Esatto! Il calendario dell'Avvento moderno nacque in Germania. Ma scusa quanta roba natalizia hanno fatto sti tedeschi?",
             "wrongFeedback": "Peccato! Il calendario dell'Avvento ha origini tedesche... Certo che ne hanno fatte di robe di Natale sti crucchi!" }
         ],
         "results": [
@@ -161,8 +164,8 @@
       "reminder": "Buongiorno! 🧤 Oggi c’è qualcosa di caldo nella casella. Copriti bene!",
       "content": { "paragraphs": [
         "Se oggi fuori fa freddo, ricordati che il caldo non viene solo dai cappotti.",
-        " Viene anche da un fidanzato pirla, che ti pensa, cerca di farti ridere e in ogni momento sai che ti sostiene sempre, qualunque cosa tu faccia.",
-        "Ecco: questo è il mio guanto in più, da infilare nella tasca, oggi e per tutto l'inverno. Tienilo per i momenti in cui serve."
+        "Viene anche da un fidanzato pirla, che ti pensa, cerca di farti ridere e in ogni momento sai che ti sostiene sempre, qualunque cosa tu faccia.",
+        "Ecco: questo è il mio 'guanto' in più, da infilare nella tasca per le evenienze, quando fa particolarmente freddo. Tienilo per i momenti in cui serve."
       ] }
     },
     {
@@ -182,19 +185,19 @@
           { "id": "gift", "label": "Pacchetto regalo", "image": "assets/decor/gift.svg" },
           { "id": "heart", "label": "Cuore", "image": "assets/decor/heart.svg" }
         ],
-        "successMessage": "Tutte le coppie trovate! Un po’ come noi: ci starebbe proprio inserire un messaggio sdolcinato, ma non oggi, mi sono un po' stufato di tutte ste robe smielate, oggi no, oggi ti becchi una bella freddura: una renna si è slogata una caviglia... E' slittata. 😬"
+        "successMessage": "Tutte le coppie trovate! Un po’ come noi: ci starebbe proprio inserire un messaggio sdolcinato, ma non oggi, oggi no, oggi ti becchi una bella freddura: una renna si è slogata una caviglia... E' slittata. 😬"
       }
     },
     {
       "day": 11, "date": "2026-12-11", "type": "photo",
-      "title": "Le luci della città",
-      "preview": "Una sera d’inverno, tante finestre accese.",
+      "title": "La principessa addobbata",
+      "preview": "E' un albero? E' un palazzo? E' batman? No! E' la cappella addobbata! 😆",
       "illustration": "assets/advent/day-11.svg",
-      "reminder": "Buongiorno! 🌃 Oggi la casella mostra una città piena di luci. Vieni a guardare.",
+      "reminder": "Buongiorno! 🌃 Oggi la casella mostra... No oggi niente spoiler!",
       "content": {
-        "image": "assets/photos/luci-della-citta.svg",
-        "alt": "Illustrazione di una città di sera, con tante finestre illuminate e le luminarie tra i palazzi",
-        "caption": "A dicembre ogni finestra accesa sembra una piccola promessa di calore. Mi piace immaginare di camminare tra queste luci, insieme a te."
+        "image": "assets/photos/day-11.jpeg",
+        "alt": "La principessa addobbata: la cappella, nel suo palazzo, con le lucine natalizie.",
+        "caption": "Beh che ti aspettavi, nessuna presa in giro? Assolutamente impossibile! Oggi ti becchi proprio questa foto super imbarazzante ma che spulciando tra tutte le mille mila foto che abbiamo non potevo proprio fare a meno di mettere. Il natale si avvicina, dovremmo essere tutti più buoni, non ti arrabbiare troppo, grazie! 😆"
       }
     },
     {
@@ -242,7 +245,7 @@
       "reminder": "Buongiorno! 🏮 Oggi nella casella c’è un buono da usare quando verrà buio presto.",
       "content": {
         "title": "Buono per una passeggiata sotto le luci",
-        "description": "Una passeggiata serale tra luminarie e vetrine, con sciarpa, due mani in tasca e due che si stringono, prendendosi tutto il tempo che serve. Fermata obbligatoria per qualcosa di caldo da bere, o che ci scladi grazie all'alcol, vedi tu. 😉",
+        "description": "Una passeggiata serale tra luminarie e vetrine, con sciarpa, le nostre mani guantate che si stringono, prendendosi tutto il tempo che serve. Fermata obbligatoria per qualcosa da bere, vedi tu se un drink oppure una cioccolata. 😉",
         "redeem": "Scegli la serata perfetta, e il luogo, io mi occupo del passaggio! Poi premi «Segna come usato».",
         "validity": "Valido fino a quando restano accese le luci."
       }
@@ -256,12 +259,13 @@
       "content": {
         "greeting": "Buongiorno amore,",
         "paragraphs": [
-          "Mancano una decina di giorni a Natale e mi sembra il momento giusto per fermarmi un attimo e scriverti.",
-          "Dicembre ha questa magia: rallenta tutto, ci fa guardare le cose con più attenzione. Mi accorgo che, tra le tante luci di questo periodo, quella che cerco ogni volta sei tu.",
-          "Grazie per i momenti in cui ridiamo, per quelli in cui ci capiamo senza parlare e anche per quelli in cui ci vuole un po’ di pazienza (ovviamente mia pazienza). Sono tutti pezzi di una storia che mi piace e che mi piace portare avanti ogni giorno.",
-          "Da qui in avanti le sorprese diventano più speciali. Non ti dico altro."
+          "Tra due giorni è il 16 dicembre, e tra due giorni sono quattro anni che siamo insieme. Direi che posso prendermi una pausa dalle caselline e provare a scriverti qualche pensiero.",
+          "Dicembre è sicuramente il momento che aspetti di più durante l'anno, sono sempre felicissimo di vederti così entusiasta e pronta a scapicollarti per fare un sacco di cose natalizie.",
+          "Guardarti in questo periodo mi mette proprio serenità e buon umore, già al momento in cui sto scrivendo questa lettera hai già in programma di organizzare laboratori per tutti per condividere la magia del Natale, saresti un'ottima elfa!",
+          "Non so bene dove volessi andare a parare con questo discorso, in sintesi volevo dirti che sono molto felice di starti affianco in questo periodo, e che mi piace tantissimo condividere con te tutte le cose che rendono speciale il Natale.",
+          "P.S. Da qui in avanti le sorprese diventano più speciali. Non dico altro. :) "
         ],
-        "closing": "Con tutto l’affetto che ho,",
+        "closing": "Con tutto l’affetto che ho (che è parecchio),",
         "signature": "Il cappello 🎩"
       }
     },
@@ -303,7 +307,7 @@
       "reminder": "Buongiorno! 🍽️ Nella casella di oggi c’è un buono per una cena speciale!",
       "content": {
         "title": "Buono per una cena cucinata da me",
-        "description": "Una cena completa preparata con le mie mani, dall’antipasto al dolce. Tu scegli il menù, io mi occupo di tutto, compresi i piatti da lavare.",
+        "description": "Una cena completa preparata con le mie mani, dall’antipasto al dolce (alemac mi farà un baffo). Tu scegli il menù, io mi occupo di tutto, compresi i piatti da lavare.",
         "redeem": "Dimmi cosa ti va e quando, poi premi «Segna come usato». Se preferisci una cena a sorpresa, lasciami carta bianca e vedremo quanto riuscirò a stupirti!",
         "validity": "Valido fino alla fine del freddo! 🕒"
       }
@@ -339,7 +343,7 @@
       "content": {
         "image": "assets/photos/day-19.jpeg",
         "alt": "Venezia, 23/11/2025",
-        "caption": "Hai ragione, non era propriamente durante il periodo strettamente natalizio, ma questo pomeriggio d’inverno a Venezia mi è rimasto molto impresso, anche perchè faceva comunque parecchio freddo. Mi piacerebbe proprio riviverlo insieme, magari con qualche buon bacaro che ci scaldi per benino... Al momento della creazione di questo calendario ancora non siamo andati a Cracovia, ma sono sicuro che abbiamo passato dei bei pomeriggi anche lì, sicuramente al freddo. Sarebbe proprio una bella tradizione se riuscissimo ogni anno a ricavarci 3/4 giorni per noi due per dare il benvenuto all'inverno e al Natale!"
+        "caption": "Lo so, lo so, non era propriamente durante il periodo strettamente natalizio, ma questo pomeriggio d’inverno a Venezia mi è rimasto molto impresso, anche perchè faceva comunque parecchio freddo. Mi piacerebbe proprio riviverlo insieme, magari con qualche bacaro che ci scaldi per benino... Al momento della creazione di questo calendario ancora non siamo andati a Cracovia, ma sono sicuro che abbiamo passato dei bei pomeriggi anche lì, sicuramente al freddo. Sarebbe proprio una bella tradizione se riuscissimo ogni anno a ricavarci 3/4 giorni per noi due per dare il benvenuto all'inverno e al Natale!"
       }
     },
     {
@@ -374,7 +378,7 @@
         ],
         "results": [
           { "minScore": 0, "title": "Viaggiatrice in partenza", "text": "Il viaggio è appena iniziato: c’è tutto il mondo da scoprire, e a Natale è pure più bello." },
-          { "minScore": 3, "title": "Esploratrice", "text": "Ottimo giro! Conosci già parecchie usanze di altri Paesi." },
+          { "minScore": 3, "title": "Esploratrice", "text": "Ottimo giro! Sicuramente hai sparato a caso, ma sceglierò di dirti che sei stata bravissimaaa!!" },
           { "minScore": 5, "title": "Giramondo di Natale", "text": "Punteggio pieno! Una donna di mondo perfetta." }
         ]
       }
@@ -393,7 +397,7 @@
         "hint": "Il nome comincia con «sol» e ha a che fare con il Sole.",
         "revealText": "La risposta è: il solstizio d’inverno.",
         "successMessage": "Il solstizio d’inverno! Bravissima, e per quanto riguarda Percy Jackson, i solstizi sono momenti in cui il mondo è più vulnerabile, le sue imprese hanno molto più valore se accadono in quei giorni.",
-        "wrongMessage": "Non è questa. Riprova: ha a che fare con il Sole che «si ferma»."
+        "wrongMessage": "Non è questa. Riprova: ha a che fare con il Sole che 'si ferma'."
       }
     },
     {
@@ -406,7 +410,7 @@
         "title": "Buono Jolly: oggi decidi tu",
         "description": "Una giornata intera o una serata in cui decidi tutto tu: cosa fare (😉), dove andare, cosa mangiare e quando tornare a casa.",
         "redeem": "Usalo quando vuoi, anche all’ultimo momento, e poi premi «Segna come usato».",
-        "validity": "Un solo utilizzo (forse, vediamo che cosa scegli, potrei abbonarti qualche utilizzo), valido tutto l’anno nuovo."
+        "validity": "Un solo utilizzo (forse, vediamo che cosa scegli), valido tutto l’anno nuovo."
       }
     },
     {
@@ -418,8 +422,8 @@
       "content": {
         "greeting": "Cara Giulia,",
         "paragraphs": [
-          "mancano pochissimi giorni a Natale è senti tutto attorno a te che c'è qualcosa di frizzante e magico. C’è quella attesa buona, che somiglia a un’emozione trattenuta.",
-          "In queste settimane ho pensato a come raccontarti quanto è importante per me averti vicina, durante quest'anno soprattutto, abbiamo affrontato numerosi cambiamenti e responsabilità, ed averti accanto è stato di grande conforto.",
+          "mancano pochissimi giorni a Natale e si sente tutto attorno a te che c'è qualcosa di frizzante e magico. C’è quella attesa buona, che somiglia a un’emozione trattenuta.",
+          "In queste settimane ho pensato a come raccontarti quanto è importante per me averti vicina, durante quest'anno soprattutto, abbiamo affrontato numerosi cambiamenti e responsabilità. Averti accanto è stato di grande conforto.",
           "Se c’è un desiderio che ho per questo Natale, è semplice: avere tempo con te, ricavarne il più possibile per passarlo insieme. Tutto il resto non mi serve, ho già tutto quello che desidero al mio fianco 🧡."
         ],
         "closing": "A domani, e a dopodomani, e a tutti i giorni che verranno,",
@@ -431,11 +435,11 @@
       "title": "La notte prima",
       "preview": "Ancora una notte, poi si apre l’ultima casella.",
       "illustration": "assets/advent/day-24.svg",
-      "reminder": "Buongiorno! 🌟 È la Vigilia e io apro i regalii (da leggere tipo rado e jack).",
+      "reminder": "Buongiorno! 🌟 Buona Vigilia!",
       "content": { "paragraphs": [
         "Oggi per te sarà il giorno dell’attesa, quello in cui tutto è pronto e la pazienza sta per essere ricompensata.",
-        "Stasera, prima di dormire, prova a spegnere tutte le luci della stanza, lasciane accesa soltanto una piccolina, calda, e pensa a una cosa bella di quest’anno, a un momento che ti ha fatto sorridere o a una cosa che ti ha reso felice.",
-        "Durante il prossimo anno, vorrei tu ripensassi a quel momento, quando ne avrai bisogno, e ti aiuterà a superare ogni difficoltà.",
+        "Stasera, prima di dormire, prova a spegnere tutte le luci della stanza, tranne una piccolina, calda, e pensa a una cosa bella di quest’anno, a un momento che ti ha fatto sorridere, una cosa che ti ha reso felice.",
+        "Durante il prossimo anno, vorrei tu ripensassi a quel momento, quando ne avrai bisogno, ti aiuterà a superare ogni difficoltà.",
         "Domani è il giorno che probabilmente aspetti più di tutto l'intero anno, dormi bene che sarà un gran giorno. Buona Vigilia amore!"
       ] }
     },
@@ -448,10 +452,12 @@
       "content": {
         "greeting": "Buongiorno amore, buon Natale! 🎄✨",
         "paragraphs": [
-          "eccoci arrivati in fondo a questo calendario. Venticinque caselle, venticinque piccoli modi per dirti che sono felice di passare un altro natale in tua compagnia.",
-          "Non so scrivere tutto quello che sento senza sembrare un biglietto di auguri, ma ci provo lo stesso. Grazie per la tua dolcezza, per la tua testardaggine, per la tua risata e per il modo in cui rendi migliore ogni giorno normale semplicemente con uno sguardo. Con te anche il freddo di dicembre sembra più gentile.",
-          "Il mio augurio per questo Natale è che tu possa sentirti sempre al sicuro, amata e libera di essere esattamente come sei. Io ci sono, oggi, domani e nei giorni che verranno, pure se farai delle puzzette.",
-          "Un ultimo pensiero, il più importante: non ho bisogno che dicembre finisca per continuare a farti sorprese. Questo calendario si chiude, ma le sorprese no, ci vediamo nella prossima puntata!"
+          "eccoci arrivati in fondo a questo calendario.",
+          "Venticinque caselle, venticinque piccoli modi per dirti che sono estremamente felice di passare un altro natale in tua compagnia.",
+          "Non so scrivere tutto quello che sento, quella forte con le letterine della coppia sei tu, ma ci provo lo stesso. Grazie per tutte le cose che fai per me, per come mi fai sentire, e per come il tempo scorre più in fretta quando sei con me.",
+          "Il mio augurio per questo Natale è che tu possa sentirti sempre al sicuro, amata e libera di essere esattamente come sei.",
+          "Io ci sono, oggi, domani e nei giorni che verranno, pure se farai delle puzzette.",
+          "Di seguito troverai il regalo che ho pensato per te, quest'anno nulla di strettamente materiale (anche perchè proprio 0 idee), ma qualcosa che mi sono accorto non essere sempre all'altezza nella nostra relazione."
         ],
         "closing": "Buon Natale amore, con tutto il cuore,",
         "signature": "Il cappello 🎩",
