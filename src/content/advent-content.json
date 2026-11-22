@@ -316,16 +316,16 @@
       "reminder": "Buongiorno! 🕯️ Oggi un altro memory, ma più difficile del primo. Otto coppie aspettano di essere trovate.",
       "content": {
         "kind": "memory",
-        "intro": "Otto coppie da trovare, stavolta. Concentrati e prenditi il tuo tempo.",
+        "intro": "Otto coppie da trovare stavolta, vediamo se riuscirai a trovare tutte! Concentrati e prenditi il tuo tempo.",
         "pairs": [
-          { "id": "wreath", "label": "Ghirlanda", "image": "assets/decor/wreath.svg" },
-          { "id": "mitten", "label": "Guanto", "image": "assets/decor/mitten.svg" },
-          { "id": "candle", "label": "Candela", "image": "assets/decor/candle.svg" },
-          { "id": "snowflake", "label": "Fiocco di neve", "image": "assets/decor/snowflake.svg" },
-          { "id": "ornament", "label": "Pallina", "image": "assets/decor/ornament.svg" },
-          { "id": "stocking", "label": "Calza", "image": "assets/decor/stocking.svg" },
-          { "id": "star", "label": "Stella", "image": "assets/decor/star.svg" },
-          { "id": "bell", "label": "Campanella", "image": "assets/decor/bell.svg" }
+          { "id": "wreath", "label": "Ghirlanda", "image": "assets/decor/wreath.jpg" },
+          { "id": "mitten", "label": "Guanto", "image": "assets/decor/mitten.jpg" },
+          { "id": "candle", "label": "Candela", "image": "assets/decor/candle.jpg" },
+          { "id": "snowflake", "label": "Fiocco di neve", "image": "assets/decor/snowflake.jpg" },
+          { "id": "ornament", "label": "Pallina", "image": "assets/decor/ornament.jpg" },
+          { "id": "stocking", "label": "Calza", "image": "assets/decor/stocking.jpg" },
+          { "id": "star", "label": "Stella", "image": "assets/decor/star.jpg" },
+          { "id": "bell", "label": "Campanella", "image": "assets/decor/bell.jpg" }
         ],
         "successMessage": "Missione compiuta! Il camino è acceso e tutte le coppie sono al loro posto."
       }
