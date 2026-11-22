@@ -85,7 +85,7 @@ Il reminder è separato dal calendario: se non lo configuri, l'app funziona lo s
    Nel log vedi testo e link; i secret mancanti sono segnalati.
 7. **Invio reale di prova**: stessa schermata con `dry_run = false`. Il messaggio è marcato «🧪 [PROVA]» e non modifica il calendario.
 
-Il workflow pianificato parte dal 1° al 25 dicembre alle 09:07 `Europe/Rome` (campo `timezone` del cron) solo dal branch
+Il workflow pianificato parte dal 1° al 25 dicembre alle 07:30 `Europe/Rome` (campo `timezone` del cron) solo dal branch
 predefinito; lo script ricontrolla la data a Roma e non invia nulla fuori periodo. GitHub può ritardare i job
 pianificati e Telegram non garantisce il minuto esatto di consegna: non è un orologio di precisione. Non c'è
 deduplicazione: rieseguire a mano un run pianificato invia di nuovo il messaggio.
@@ -98,7 +98,7 @@ deduplicazione: rieseguire a mano un run pianificato invia di nuovo il messaggio
 - [ ] Il file è sul branch predefinito (Settings → Branches).
 - [ ] Secret e `publicUrl` impostati (il dry-run non mostra avvisi).
 - [ ] Prova reale eseguita con successo prima del 1° dicembre.
-- [ ] Il 1° dicembre, dopo le 09:07, controlla che il run sia comparso e verde.
+- [ ] Il 1° dicembre, dopo le 07:30, controlla che il run sia comparso e verde.
 
 ## Privacy
 

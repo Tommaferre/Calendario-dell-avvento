@@ -11,10 +11,10 @@
   "days": [
     {
       "day": 1, "date": "2026-12-01", "type": "message",
-      "title": "Si accende la prima luce",
+      "title": "Benvenuta nel nostro dicembre! 🎄",
       "preview": "Comincia il nostro dicembre.",
       "illustration": "assets/advent/day-01.svg",
-      "reminder": "Buongiorno! 🎄 Si accende la prima luce del nostro dicembre. La prima casella ti aspetta.",
+      "reminder": "Buongiorno! 🎄 Si accende il primo giorno del nostro dicembre. La prima casella ti aspetta.",
       "content": { "paragraphs": [
         "Buon primo dicembre! Da oggi, per venticinque giorni, troverai qui una piccola sorpresa: a volte un pensiero, a volte un gioco, a volte una promessa da mantenere insieme.",
         "Non c’è nessuna fretta. Ogni casella aspetta il suo giorno, e quelle già aperte restano qui, al caldo, per quando vorrai rileggerle."

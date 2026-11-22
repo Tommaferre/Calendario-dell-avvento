@@ -1,11 +1,11 @@
-# Reminder quotidiano su Telegram, dal 1° al 25 dicembre alle 09:07 (Europe/Rome).
+# Reminder quotidiano su Telegram, dal 1° al 25 dicembre alle 07:30 (Europe/Rome).
 # Completamente indipendente dal deploy: nessun invio dopo un push.
 # Il trigger "schedule" funziona solo sul branch predefinito del repository.
 name: Advent reminder
 
 on:
   schedule:
-    - cron: '7 9 1-25 12 *'
+    - cron: '30 7 1-25 12 *'
       timezone: 'Europe/Rome'
   workflow_dispatch:
     inputs:

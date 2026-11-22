@@ -222,7 +222,7 @@ I passaggi completi (BotFather, `/start`, chat id, Secrets) sono nel **README �
 4. **Dry-run** (non invia nulla): *Actions → Advent reminder → Run workflow* → `day` = 7, `dry_run` = `true`. Leggi il log.
 5. **Invio reale di prova**: stessa schermata con `dry_run` = `false`: arriva un messaggio «🧪 [PROVA]» con il pulsante *Apri la sorpresa*.
 6. **Verifica del workflow pianificato**: scheda *Actions → Advent reminder* attiva e senza avvisi, repository con attività recente
-   (vedi la checklist nel README). Il primo run reale è il 1° dicembre dopo le 09:07.
+   (vedi la checklist nel README). Il primo run reale è il 1° dicembre dopo le 07:30.
 
 In locale puoi provare lo script senza inviare nulla:
 
